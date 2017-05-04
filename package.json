@@ -1,0 +1,30 @@
+{
+  "name": "ucf2synbiohub",
+  "version": "1.0.0",
+  "description": "Converts a Cello UCF File to SBOL and stores it in a specific SynbioHub registry.",
+  "main": "ucfToSBOL.js",
+  "scripts": {
+    "test": "pushucf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CIDARLAB/CelloUCF2SynbioHub.git"
+  },
+  "keywords": [
+    "UCF",
+    "Cello",
+    "Synbiohub",
+    "SBOL",
+    "conversion"
+  ],
+  "author": "Prashant Vaidyanathan",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/CIDARLAB/CelloUCF2SynbioHub/issues"
+  },
+  "homepage": "https://github.com/CIDARLAB/CelloUCF2SynbioHub#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "sboljs": "^1.10.0"
+  }
+}
