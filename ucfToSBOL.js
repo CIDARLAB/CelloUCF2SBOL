@@ -43,8 +43,6 @@ function convertPartsToSBOL(partCollection){
             componentDefinition.uri = componentDefinition.persistentIdentity + '/' + componentDefinition.version;
             componentDefinition.wasDerivedFrom = derivedFrom;
 
-            // console.log(componentDefinition.uri.toString());
-
             const sequence = sbol.sequence()
             sequence.version = version;
             sequence.displayId = part.name + '_sequence';
@@ -56,8 +54,7 @@ function convertPartsToSBOL(partCollection){
             sequence.wasDerivedFrom = derivedFrom;
             componentDefinition.addSequence(sequence)
             
-            // console.log(sequence.uri.toString());
-
+            
     }, this);    
 
 };
