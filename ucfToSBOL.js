@@ -7,7 +7,11 @@ var so = 'http://identifiers.org/so/'
 const version = '1-Eco1C1G1T0';
 const derivedFrom = 'https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json';
 const datecreated = new Date("April 1, 2016 00:00:00");
+const today = new Date();
 const urlsuffix = 'http://cellocad.org/';
+const ownedBy = 'http://wiki.synbiohub.org/wiki/Terms/synbiohub#/ownedBy';
+const provNS = 'http://www.w3.org/ns/prov#';
+const dcNS = 'http://purl.org/dc/elements/1.1/';
 
 
 const ymax = 'http://mathworld.wolfram.com/Maximum.html';
@@ -17,6 +21,28 @@ const kd = 'https://en.wikipedia.org/wiki/Dissociation_constant';
 const eqn = 'https://en.wikipedia.org/wiki/Equation';
 
 const gate_parts_so = 'http://identifiers.org/so/SO:0000804';
+
+var sbol = new SBOLDocument();
+//const createdBy = sbol.genericTopLevel();
+
+var actVersion = 1;
+var actDisplayId = 'cello2sbol';
+var actPersistantIdentity = urlsuffix + actDisplayId;
+var actURI = actPersistantIdentity + '/' + actVersion;
+
+const activity = sbol.genericTopLevel(actURI,provNS + 'Activity');
+
+activity.version = actVersion;
+activity.displayId = actDisplayId;
+activity.name = 'Cello UCF to SBOL conversion';
+activity.description = 'Conversion of the Cello UCF parts and metadata to SBOL2.1';
+activity.addStringAnnotation(dcNS + 'creator','Prashant Vaidyanathan');
+activity.addStringAnnotation(dcNS + 'creator','Chris J. Myers');
+activity.addStringAnnotation('http://purl.org/dc/terms/created', today.toISOString() + '');
+activity.persistentIdentity = actPersistantIdentity;
+activity.uri = actURI;
+
+
 
 //Cello UCF File
 var ucf = JSON.parse(fs.readFileSync('Eco1C1G1T0.UCF.json') + '');
@@ -44,9 +70,8 @@ ucf.forEach(function (collection) {
 }, this);
 
 var partsSBOL = {}
-var sbol = new SBOLDocument();
 
-//console.log(partsArr);
+
 convertPartsToSBOL();
 convertGatePartsToSBOL();
 
@@ -76,6 +101,7 @@ function convertPartsToSBOL() {
             componentDefinition.persistentIdentity = urlsuffix + componentDefinition.displayId;
             componentDefinition.uri = componentDefinition.persistentIdentity + '/' + componentDefinition.version;
             componentDefinition.wasDerivedFrom = derivedFrom;
+            componentDefinition.addUriAnnotation(provNS + 'wasGeneratedBy', actURI);
             //add Type
 
 
@@ -88,10 +114,15 @@ function convertPartsToSBOL() {
             sequence.uri = sequence.persistentIdentity + '/' + sequence.version;
             sequence.wasDerivedFrom = derivedFrom;
             sequence.encoding = SBOLDocument.terms.dnaSequence;
+            sequence.addUriAnnotation(provNS + 'wasGeneratedBy', actURI);
             componentDefinition.addSequence(sequence)
 
             componentDefinition.addRole(getPartType(part.type));
             componentDefinition.addType(SBOLDocument.terms.dnaRegion);
+
+            if(part.type === ''){
+
+            }
 
             componentDefinition.addStringAnnotation('http://purl.org/dc/terms/created', datecreated.toISOString() + '');
             var uriVal = componentDefinition.uri;
@@ -113,7 +144,7 @@ function convertGatePartsToSBOL() {
         componentDefinition.persistentIdentity = urlsuffix + componentDefinition.displayId;
         componentDefinition.uri = componentDefinition.persistentIdentity + '/' + componentDefinition.version;
         componentDefinition.wasDerivedFrom = derivedFrom;
-
+        componentDefinition.addUriAnnotation(provNS + 'wasGeneratedBy', actURI);
         //Parts in Cassette
 
         //console.log('Cassettes in ' + gpartName);
@@ -170,6 +201,7 @@ function convertGatePartsToSBOL() {
             sequence.uri = sequence.persistentIdentity + '/' + sequence.version;
             sequence.wasDerivedFrom = derivedFrom;
             sequence.encoding = SBOLDocument.terms.dnaSequence;
+            sequence.addUriAnnotation(provNS + 'wasGeneratedBy', actURI);
             componentDefinition.addSequence(sequence);
 
         }, this);

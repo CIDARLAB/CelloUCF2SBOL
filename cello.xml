@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:ns0="http://purl.org/dc/elements/1.1/">
   <sbol:ComponentDefinition rdf:about="http://cellocad.org/BydvJ/1-Eco1C1G1T0">
     <sbol:persistentIdentity rdf:resource="http://cellocad.org/BydvJ"/>
     <sbol:displayId>BydvJ</sbol:displayId>
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>BydvJ</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000374"/>
@@ -17,6 +18,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>A1</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
@@ -28,6 +30,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>AmtR</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
@@ -39,6 +42,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>L3S2P55</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000141"/>
@@ -50,6 +54,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>pAmtR</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
@@ -61,6 +66,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>SarJ</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000374"/>
@@ -72,6 +78,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>B1</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
@@ -83,6 +90,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>BM3R1</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
@@ -94,6 +102,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>L3S2P11</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000141"/>
@@ -105,6 +114,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>pBM3R1</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
@@ -116,6 +126,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>B2</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
@@ -127,6 +138,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>B3</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
@@ -138,6 +150,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>RiboJ57</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000374"/>
@@ -149,6 +162,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>E1</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
@@ -160,6 +174,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>BetI</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
@@ -171,6 +186,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>L3S3P11</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000141"/>
@@ -182,6 +198,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>pBetI</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
@@ -193,6 +210,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>RiboJ54</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000374"/>
@@ -204,6 +222,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>F1</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
@@ -215,6 +234,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>AmeR</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
@@ -226,6 +246,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>L3S3P31</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000141"/>
@@ -237,6 +258,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>pAmeR</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
@@ -248,6 +270,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>RiboJ51</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000374"/>
@@ -259,6 +282,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>H1</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
@@ -270,6 +294,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>HlyIIR</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
@@ -281,6 +306,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>ECK120033736</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000141"/>
@@ -292,6 +318,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>pHlyIIR</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
@@ -303,6 +330,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>RiboJ53</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000374"/>
@@ -314,6 +342,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>P1</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
@@ -325,6 +354,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>PhlF</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
@@ -336,6 +366,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>ECK120033737</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000141"/>
@@ -347,6 +378,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>pPhlF</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
@@ -358,6 +390,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>P2</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
@@ -369,6 +402,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>P3</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
@@ -380,6 +414,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>RiboJ10</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000374"/>
@@ -391,6 +426,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>S1</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
@@ -402,6 +438,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>SrpR</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
@@ -413,6 +450,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>ECK120019600</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000141"/>
@@ -424,6 +462,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>pSrpR</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
@@ -435,6 +474,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>S2</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
@@ -446,6 +486,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>ECK120029600</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000141"/>
@@ -457,6 +498,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>S3</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
@@ -468,6 +510,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>S4</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
@@ -479,6 +522,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>F_scar</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0001953"/>
@@ -490,6 +534,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>E_scar</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0001953"/>
@@ -501,6 +546,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>D_scar</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0001953"/>
@@ -512,6 +558,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>C_scar</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0001953"/>
@@ -523,6 +570,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>B_scar</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0001953"/>
@@ -534,6 +582,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>A_scar</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0001953"/>
@@ -545,6 +594,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>Y_scar</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0001953"/>
@@ -556,6 +606,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>X_scar</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0001953"/>
@@ -567,6 +618,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>V_scar</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0001953"/>
@@ -578,6 +630,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>U_scar</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0001953"/>
@@ -589,6 +642,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>R_scar</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0001953"/>
@@ -600,6 +654,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>Q_scar</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0001953"/>
@@ -611,6 +666,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>P_scar</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0001953"/>
@@ -622,6 +678,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>O_scar</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0001953"/>
@@ -633,6 +690,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>G_scar</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0001953"/>
@@ -644,6 +702,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>A1_AmtR</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
@@ -771,6 +830,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>B1_BM3R1</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
@@ -898,6 +958,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>B2_BM3R1</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
@@ -1025,6 +1086,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>B3_BM3R1</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
@@ -1152,6 +1214,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>E1_BetI</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
@@ -1279,6 +1342,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>F1_AmeR</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
@@ -1406,6 +1470,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>H1_HlyIIR</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
@@ -1533,6 +1598,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>P1_PhlF</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
@@ -1660,6 +1726,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>P2_PhlF</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
@@ -1787,6 +1854,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>P3_PhlF</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
@@ -1914,6 +1982,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>S1_SrpR</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
@@ -2041,6 +2110,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>S2_SrpR</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
@@ -2168,6 +2238,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>S3_SrpR</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
@@ -2295,6 +2366,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>S4_SrpR</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <dcterms:created>2016-04-01T04:00:00.000Z</dcterms:created>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
@@ -2422,6 +2494,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>BydvJ_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTGAagGGTGTCTCAAGGTGCGTACCTTGACTGATGAGTCCGAAAGGACGAAACACCcctctacaaataattttgtttaa</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2431,6 +2504,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>A1_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>AATGTTCCCTAATAATCAGCAAAGAGGTTACTAG</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2440,6 +2514,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>AmtR_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>ATGGCAGGCGCAGTTGGTCGTCCGCGTCGTAGTGCACCGCGTCGTGCAGGTAAAAATCCGCGTGAAGAAATTCTGGATGCAAGCGCAGAACTGTTTACCCGTCAGGGTTTTGCAACCACCAGTACCCATCAGATTGCAGATGCAGTTGGTATTCGTCAGGCAAGCCTGTATTATCATTTTCCGAGCAAAACCGAAATCTTTCTGACCCTGCTGAAAAGCACCGTTGAACCGAGCACCGTTCTGGCAGAAGATCTGAGCACCCTGGATGCAGGTCCGGAAATGCGTCTGTGGGCAATTGTTGCAAGCGAAGTTCGTCTGCTGCTGAGCACCAAATGGAATGTTGGTCGTCTGTATCAGCTGCCGATTGTTGGTAGCGAAGAATTTGCAGAATATCATAGCCAGCGTGAAGCACTGACCAATGTTTTTCGTGATCTGGCAACCGAAATTGTTGGTGATGATCCGCGTGCAGAACTGCCGTTTCATATTACCATGAGCGTTATTGAAATGCGTCGCAATGATGGTAAAATTCCGAGTCCGCTGAGCGCAGATAGCCTGCCGGAAACCGCAATTATGCTGGCAGATGCAAGCCTGGCAGTTCTGGGTGCACCGCTGCCTGCAGATCGTGTTGAAAAAACCCTGGAACTGATTAAACAGGCAGATGCAAAATAATAA</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2449,6 +2524,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>L3S2P55_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTCGGTACCAAAGACGAACAATAAGACGCTGAAAAGCGTCTTTTTTCGTTTTGGTCC</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2458,6 +2534,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>pAmtR_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTTGTCCAACCAAATgattcgttaccctttgacagTTTCTATCGATCTATAGATAATgctagc</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2467,6 +2544,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>SarJ_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTGAAGACTGTCGCCGGATGTGTATCCGACCTGACGATGGCCCAAAAGGGCCGAAACAGTCCTCTACAAATAATTTTGTTTAA</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2476,6 +2554,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>B1_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTATGGACTATGTTTTAACTACTAG</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2485,6 +2564,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>BM3R1_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>ATGGAAAGCACCCCGACCAAACAGAAAGCAATTTTTAGCGCAAGCCTGCTGCTGTTTGCAGAACGTGGTTTTGATGCAACCACCATGCCGATGATTGCAGAAAATGCAAAAGTTGGTGCAGGCACCATTTATCGCTATTTCAAAAACAAAGAAAGCCTGGTGAACGAACTGTTTCAGCAGCATGTTAATGAATTTCTGCAGTGTATTGAAAGCGGTCTGGCAAATGAACGTGATGGTTATCGTGATGGCTTTCATCACATTTTTGAAGGTATGGTGACCTTTACCAAAAATCATCCGCGTGCACTGGGTTTTATCAAAACCCATAGCCAGGGCACCTTTCTGACCGAAGAAAGCCGTCTGGCATATCAGAAACTGGTTGAATTTGTGTGCACCTTTTTTCGTGAAGGTCAGAAACAGGGTGTGATTCGTAATCTGCCGGAAAATGCACTGATTGCAATTCTGTTTGGCAGCTTTATGGAAGTGTATGAAATGATCGAGAACGATTATCTGAGCCTGACCGATGAACTGCTGACCGGTGTTGAAGAAAGCCTGTGGGCAGCACTGAGCCGTCAGAGCTAATAA</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2494,6 +2574,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>L3S2P11_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTCGGTACCAAATTCCAGAAAAGAGACGCTTTCGAGCGTCTTTTTTCGTTTTGGTCC</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2503,6 +2584,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>pBM3R1_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>AATCCGCGTGATAGGTCTGATTCGTTACCAATTGACGGAATGAACGTTCATTCCGATAATGCTAGC</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2512,6 +2594,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>B2_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTATGGACTATGTTTTTCAAAGACGAAAAACTACTAG</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2521,6 +2604,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>B3_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CCAAACGAGGCCGGGAGG</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2530,6 +2614,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>RiboJ57_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTGAAGAAGTCAATTAATGTGCTTTTAATTCTGATGAGTCGGTGACGACGAAACTTCCTCTACAAATAATTTTGTTTAA</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2539,6 +2624,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>E1_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CCCCCCGAGGAGTAGCAC</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2548,6 +2634,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>BetI_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>ATGCCGAAACTGGGTATGCAGAGCATTCGTCGTCGTCAGCTGATTGATGCAACCCTGGAAGCAATTAATGAAGTTGGTATGCATGATGCAACCATTGCACAGATTGCACGTCGTGCCGGTGTTAGCACCGGTATTATTAGCCATTATTTCCGCGATAAAAACGGTCTGCTGGAAGCAACCATGCGTGATATTACCAGCCAGCTGCGTGATGCAGTTCTGAATCGTCTGCATGCACTGCCGCAGGGTAGCGCAGAACAGCGTCTGCAGGCAATTGTTGGTGGTAATTTTGATGAAACCCAGGTTAGCAGCGCAGCAATGAAAGCATGGCTGGCATTTTGGGCAAGCAGCATGCATCAGCCGATGCTGTATCGTCTGCAGCAGGTTAGCAGTCGTCGTCTGCTGAGCAATCTGGTTAGCGAATTTCGTCGTGAACTGCCTCGTGAACAGGCACAAGAGGCAGGTTATGGTCTGGCAGCACTGATTGATGGTCTGTGGCTGCGTGCAGCACTGAGCGGTAAACCGCTGGATAAAACCCGTGCAAATAGCCTGACCCGTCATTTTATCACCCAGCATCTGCCGACCGATTAATAA</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2557,6 +2644,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>L3S3P11_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CCAATTATTGAACACCCTTCGGGGTGTTTTTTTGTTTCTGGTCTCCC</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2566,6 +2654,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>pBetI_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>AGCGCGGGTGAGAGGgattcgttaccaatagacaATTgATTGGACGTTCAATATAAtgctagc</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2575,6 +2664,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>RiboJ54_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTGAAGGGGTCAGTTGATGTGCTTTCAACTCTGATGAGTCAGTGATGACGAAACCCCCTCTACAAATAATTTTGTTTAA</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2584,6 +2674,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>F1_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTATGGACTATGTTTTCACATACGAGGGGGATTAG</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2593,6 +2684,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>AmeR_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>ATGAACAAAACCATTGATCAGGTGCGTAAAGGTGATCGTAAAAGCGATCTGCCGGTTCGTCGTCGTCCGCGTCGTAGTGCCGAAGAAACCCGTCGTGATATTCTGGCAAAAGCCGAAGAACTGTTTCGTGAACGTGGTTTTAATGCAGTTGCCATTGCAGATATTGCAAGCGCACTGAATATGAGTCCGGCAAATGTGTTTAAACATTTTAGCAGCAAAAACGCACTGGTTGATGCAATTGGTTTTGGTCAGATTGGTGTTTTTGAACGTCAGATTTGTCCGCTGGATAAAAGCCATGCACCGCTGGATCGTCTGCGTCATCTGGCACGTAATCTGATGGAACAGCATCATCAGGATCATTTCAAACACATACGGGTTTTTATTCAGATCCTGATGACCGCCAAACAGGATATGAAATGTGGCGATTATTACAAAAGCGTGATTGCAAAACTGCTGGCCGAAATTATTCGTGATGGTGTTGAAGCAGGTCTGTATATTGCAACCGATATTCCGGTTCTGGCAGAAACCGTTCTGCATGCACTGACCAGCGTTATTCATCCGGTTCTGATTGCACAAGAAGATATTGGTAATCTGGCAACCCGTTGTGATCAGCTGGTTGATCTGATTGATGCAGGTCTGCGTAATCCGCTGGCAAAATAATAA</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2602,6 +2694,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>L3S3P31_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CCAATTATTGAACACCCTAACGGGTGTTTTTTTTTTTTTGGTCTCCC</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2611,6 +2704,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>pAmeR_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>TCGTCACTAGAGGGCGATAGTGACAAACTTGACAACTCATCACTTCCTAGGTATAATGCTAGC</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2620,6 +2714,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>RiboJ51_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTGAAGTAGTCACCGGCTGTGCTTGCCGGTCTGATGAGCCTGTGAAGGCGAAACTACCTCTACAAATAATTTTGTTTAA</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2629,6 +2724,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>H1_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>ACCCCCGAG</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2638,6 +2734,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>HlyIIR_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>ATGAAATACATCCTGTTTGAGGTGTGCGAAATGGGTAAAAGCCGTGAACAGACCATGGAAAATATTCTGAAAGCAGCCAAAAAGAAATTCGGCGAACGTGGTTATGAAGGCACCAGCATTCAAGAAATTACCAAAGAAGCCAAAGTTAACGTTGCAATGGCCAGCTATTACTTTAATGGCAAAGAGAACCTGTACTACGAGGTGTTCAAAAAATACGGTCTGGCAAATGAACTGCCGAACTTTCTGGAAAAAAACCAGTTTAATCCGATTAATGCCCTGCGTGAATATCTGACCGTTTTTACCACCCACATTAAAGAAAATCCGGAAATTGGCACCCTGGCCTATGAAGAAATTATCAAAGAAAGCGCACGCCTGGAAAAAATCAAACCGTATTTTATCGGCAGCTTCGAACAGCTGAAAGAAATTCTGCAAGAGGGTGAAAAACAGGGTGTGTTTCACTTTTTTAGCATCAACCATACCATCCATTGGATTACCAGCATTGTTCTGTTTCCGAAATTCAAAAAATTCATCGATAGCCTGGGTCCGAATGAAACCAATGATACCAATCATGAATGGATGCCGGAAGATCTGGTTAGCCGTATTATTAGCGCACTGACCGATAAACCGAACATTTAATAA</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2647,6 +2744,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>ECK120033736_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>aacgcatgagAAAGCCCCCGGAAGATCACCTTCCGGGGGCTTTtttattgcgc</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2656,6 +2754,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>pHlyIIR_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>ACCAGGAATCTGAACgattcgttaccaattgccATATTTAAAATTCTTGTTTAAAatgctagc</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2665,6 +2764,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>RiboJ53_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTGAAGCGGTCAACGCATGTGCTTTGCGTTCTGATGAGACAGTGATGTCGAAACCGCCTCTACAAATAATTTTGTTTAA</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2674,6 +2774,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>P1_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTATGGACTATGTTTGAAAGGGAGAAATACTAG</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2683,6 +2784,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>PhlF_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>ATGGCACGTACCCCGAGCCGTAGCAGCATTGGTAGCCTGCGTAGTCCGCATACCCATAAAGCAATTCTGACCAGCACCATTGAAATCCTGAAAGAATGTGGTTATAGCGGTCTGAGCATTGAAAGCGTTGCACGTCGTGCCGGTGCAAGCAAACCGACCATTTATCGTTGGTGGACCAATAAAGCAGCACTGATTGCCGAAGTGTATGAAAATGAAAGCGAACAGGTGCGTAAATTTCCGGATCTGGGTAGCTTTAAAGCCGATCTGGATTTTCTGCTGCGTAATCTGTGGAAAGTTTGGCGTGAAACCATTTGTGGTGAAGCATTTCGTTGTGTTATTGCAGAAGCACAGCTGGACCCTGCAACCCTGACCCAGCTGAAAGATCAGTTTATGGAACGTCGTCGTGAGATGCCGAAAAAACTGGTTGAAAATGCCATTAGCAATGGTGAACTGCCGAAAGATACCAATCGTGAACTGCTGCTGGATATGATTTTTGGTTTTTGTTGGTATCGCCTGCTGACCGAACAGCTGACCGTTGAACAGGATATTGAAGAATTTACCTTCCTGCTGATTAATGGTGTTTGTCCGGGTACACAGCGTTAATAA</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2692,6 +2794,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>ECK120033737_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>ggaaacacagAAAAAAGCCCGCACCTGACAGTGCGGGCTTTTTTTTTcgaccaaagg</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2701,6 +2804,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>pPhlF_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CGACGTACGGTGGAAtctgattcgttaccaattgacATGATACGAAACGTACCGTATCGTTAAGGT</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2710,6 +2814,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>P2_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>GGAGCTATGGACTATGTTTGAAAGGCTGAAATACTAG</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2719,6 +2824,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>P3_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTTTACGAGGGCGATCCT</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2728,6 +2834,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>RiboJ10_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTGAAGCGCTCAACGGGTGTGCTTCCCGTTCTGATGAGTCCGTGAGGACGAAAGCGCCTCTACAAATAATTTTGTTTAA</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2737,6 +2844,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>S1_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>GAGTCTATGGACTATGTTTTCACATATGAGATACCAGG</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2746,6 +2854,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>SrpR_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>ATGGCACGTAAAACCGCAGCAGAAGCAGAAGAAACCCGTCAGCGTATTATTGATGCAGCACTGGAAGTTTTTGTTGCACAGGGTGTTAGTGATGCAACCCTGGATCAGATTGCACGTAAAGCCGGTGTTACCCGTGGTGCAGTTTATTGGCATTTTAATGGTAAACTGGAAGTTCTGCAGGCAGTTCTGGCAAGCCGTCAGCATCCGCTGGAACTGGATTTTACACCGGATCTGGGTATTGAACGTAGCTGGGAAGCAGTTGTTGTTGCAATGCTGGATGCAGTTCATAGTCCGCAGAGCAAACAGTTTAGCGAAATTCTGATTTATCAGGGTCTGGATGAAAGCGGTCTGATTCATAATCGTATGGTTCAGGCAAGCGATCGTTTTCTGCAGTATATTCATCAGGTTCTGCGTCATGCAGTTACCCAGGGTGAACTGCCGATTAATCTGGATCTGCAGACCAGCATTGGTGTTTTTAAAGGTCTGATTACCGGTCTGCTGTATGAAGGTCTGCGTAGCAAAGATCAGCAGGCACAGATTATCAAAGTTGCACTGGGTAGCTTTTGGGCACTGCTGCGTGAACCGCCTCGTTTTCTGCTGTGTGAAGAAGCACAGATTAAACAGGTGAAATCCTTCGAATAATAA</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2755,6 +2864,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>ECK120019600_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>TTCAGCCAAAAAACTTAAGACCGCCGGTCTTGTCCACTACCTTGCAGTAATGCGGTGGACAGGATCGGCGGTTTTCTTTTCTCTTCTCAA</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2764,6 +2874,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>pSrpR_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>TCTATGATTGGTCCAGATTCGTTACCAATTGACAGCTAGCTCAGTCCTAGGTATATACATACATGCTTGTTTGTTTGTAAAC</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2773,6 +2884,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>S2_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTATGGACTATGTTTTCACACAGGAAATACCAGG</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2782,6 +2894,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>ECK120029600_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>TTCAGCCAAAAAACTTAAGACCGCCGGTCTTGTCCACTACCTTGCAGTAATGCGGTGGACAGGATCGGCGGTTTTCTTTTCTCTTCTCAA</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2791,6 +2904,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>S3_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>GAGTCTATGGACTATGTTTTCACAGAGGAGGTACCAGG</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2800,6 +2914,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>S4_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>GAGTCTATGGACTATGTTTTCACAAAGGAAGTACCAGG</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2809,6 +2924,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>F_scar_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CGCT</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2818,6 +2934,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>E_scar_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>GCTT</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2827,6 +2944,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>D_scar_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>AGGT</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2836,6 +2954,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>C_scar_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>AATG</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2845,6 +2964,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>B_scar_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>TACG</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2854,6 +2974,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>A_scar_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>GGAG</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2863,6 +2984,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>Y_scar_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>ATTG</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2872,6 +2994,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>X_scar_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>TGTC</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2881,6 +3004,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>V_scar_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>TCTG</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2890,6 +3014,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>U_scar_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>GGGC</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2899,6 +3024,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>R_scar_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>GTAA</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2908,6 +3034,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>Q_scar_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>GAGT</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2917,6 +3044,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>P_scar_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CCTA</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2926,6 +3054,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>O_scar_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>ATGC</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2935,6 +3064,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>G_scar_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>ATAG</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2944,6 +3074,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>A1_AmtR_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTGAagGGTGTCTCAAGGTGCGTACCTTGACTGATGAGTCCGAAAGGACGAAACACCcctctacaaataattttgtttaaAATGTTCCCTAATAATCAGCAAAGAGGTTACTAGATGGCAGGCGCAGTTGGTCGTCCGCGTCGTAGTGCACCGCGTCGTGCAGGTAAAAATCCGCGTGAAGAAATTCTGGATGCAAGCGCAGAACTGTTTACCCGTCAGGGTTTTGCAACCACCAGTACCCATCAGATTGCAGATGCAGTTGGTATTCGTCAGGCAAGCCTGTATTATCATTTTCCGAGCAAAACCGAAATCTTTCTGACCCTGCTGAAAAGCACCGTTGAACCGAGCACCGTTCTGGCAGAAGATCTGAGCACCCTGGATGCAGGTCCGGAAATGCGTCTGTGGGCAATTGTTGCAAGCGAAGTTCGTCTGCTGCTGAGCACCAAATGGAATGTTGGTCGTCTGTATCAGCTGCCGATTGTTGGTAGCGAAGAATTTGCAGAATATCATAGCCAGCGTGAAGCACTGACCAATGTTTTTCGTGATCTGGCAACCGAAATTGTTGGTGATGATCCGCGTGCAGAACTGCCGTTTCATATTACCATGAGCGTTATTGAAATGCGTCGCAATGATGGTAAAATTCCGAGTCCGCTGAGCGCAGATAGCCTGCCGGAAACCGCAATTATGCTGGCAGATGCAAGCCTGGCAGTTCTGGGTGCACCGCTGCCTGCAGATCGTGTTGAAAAAACCCTGGAACTGATTAAACAGGCAGATGCAAAATAATAACTCGGTACCAAAGACGAACAATAAGACGCTGAAAAGCGTCTTTTTTCGTTTTGGTCC</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2953,6 +3084,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>B1_BM3R1_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTGAAGACTGTCGCCGGATGTGTATCCGACCTGACGATGGCCCAAAAGGGCCGAAACAGTCCTCTACAAATAATTTTGTTTAACTATGGACTATGTTTTAACTACTAGATGGAAAGCACCCCGACCAAACAGAAAGCAATTTTTAGCGCAAGCCTGCTGCTGTTTGCAGAACGTGGTTTTGATGCAACCACCATGCCGATGATTGCAGAAAATGCAAAAGTTGGTGCAGGCACCATTTATCGCTATTTCAAAAACAAAGAAAGCCTGGTGAACGAACTGTTTCAGCAGCATGTTAATGAATTTCTGCAGTGTATTGAAAGCGGTCTGGCAAATGAACGTGATGGTTATCGTGATGGCTTTCATCACATTTTTGAAGGTATGGTGACCTTTACCAAAAATCATCCGCGTGCACTGGGTTTTATCAAAACCCATAGCCAGGGCACCTTTCTGACCGAAGAAAGCCGTCTGGCATATCAGAAACTGGTTGAATTTGTGTGCACCTTTTTTCGTGAAGGTCAGAAACAGGGTGTGATTCGTAATCTGCCGGAAAATGCACTGATTGCAATTCTGTTTGGCAGCTTTATGGAAGTGTATGAAATGATCGAGAACGATTATCTGAGCCTGACCGATGAACTGCTGACCGGTGTTGAAGAAAGCCTGTGGGCAGCACTGAGCCGTCAGAGCTAATAACTCGGTACCAAATTCCAGAAAAGAGACGCTTTCGAGCGTCTTTTTTCGTTTTGGTCC</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2962,6 +3094,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>B2_BM3R1_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTGAAGACTGTCGCCGGATGTGTATCCGACCTGACGATGGCCCAAAAGGGCCGAAACAGTCCTCTACAAATAATTTTGTTTAACTATGGACTATGTTTTTCAAAGACGAAAAACTACTAGATGGAAAGCACCCCGACCAAACAGAAAGCAATTTTTAGCGCAAGCCTGCTGCTGTTTGCAGAACGTGGTTTTGATGCAACCACCATGCCGATGATTGCAGAAAATGCAAAAGTTGGTGCAGGCACCATTTATCGCTATTTCAAAAACAAAGAAAGCCTGGTGAACGAACTGTTTCAGCAGCATGTTAATGAATTTCTGCAGTGTATTGAAAGCGGTCTGGCAAATGAACGTGATGGTTATCGTGATGGCTTTCATCACATTTTTGAAGGTATGGTGACCTTTACCAAAAATCATCCGCGTGCACTGGGTTTTATCAAAACCCATAGCCAGGGCACCTTTCTGACCGAAGAAAGCCGTCTGGCATATCAGAAACTGGTTGAATTTGTGTGCACCTTTTTTCGTGAAGGTCAGAAACAGGGTGTGATTCGTAATCTGCCGGAAAATGCACTGATTGCAATTCTGTTTGGCAGCTTTATGGAAGTGTATGAAATGATCGAGAACGATTATCTGAGCCTGACCGATGAACTGCTGACCGGTGTTGAAGAAAGCCTGTGGGCAGCACTGAGCCGTCAGAGCTAATAACTCGGTACCAAATTCCAGAAAAGAGACGCTTTCGAGCGTCTTTTTTCGTTTTGGTCC</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2971,6 +3104,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>B3_BM3R1_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTGAAGACTGTCGCCGGATGTGTATCCGACCTGACGATGGCCCAAAAGGGCCGAAACAGTCCTCTACAAATAATTTTGTTTAACCAAACGAGGCCGGGAGGATGGAAAGCACCCCGACCAAACAGAAAGCAATTTTTAGCGCAAGCCTGCTGCTGTTTGCAGAACGTGGTTTTGATGCAACCACCATGCCGATGATTGCAGAAAATGCAAAAGTTGGTGCAGGCACCATTTATCGCTATTTCAAAAACAAAGAAAGCCTGGTGAACGAACTGTTTCAGCAGCATGTTAATGAATTTCTGCAGTGTATTGAAAGCGGTCTGGCAAATGAACGTGATGGTTATCGTGATGGCTTTCATCACATTTTTGAAGGTATGGTGACCTTTACCAAAAATCATCCGCGTGCACTGGGTTTTATCAAAACCCATAGCCAGGGCACCTTTCTGACCGAAGAAAGCCGTCTGGCATATCAGAAACTGGTTGAATTTGTGTGCACCTTTTTTCGTGAAGGTCAGAAACAGGGTGTGATTCGTAATCTGCCGGAAAATGCACTGATTGCAATTCTGTTTGGCAGCTTTATGGAAGTGTATGAAATGATCGAGAACGATTATCTGAGCCTGACCGATGAACTGCTGACCGGTGTTGAAGAAAGCCTGTGGGCAGCACTGAGCCGTCAGAGCTAATAACTCGGTACCAAATTCCAGAAAAGAGACGCTTTCGAGCGTCTTTTTTCGTTTTGGTCC</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2980,6 +3114,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>E1_BetI_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTGAAGAAGTCAATTAATGTGCTTTTAATTCTGATGAGTCGGTGACGACGAAACTTCCTCTACAAATAATTTTGTTTAACCCCCCGAGGAGTAGCACATGCCGAAACTGGGTATGCAGAGCATTCGTCGTCGTCAGCTGATTGATGCAACCCTGGAAGCAATTAATGAAGTTGGTATGCATGATGCAACCATTGCACAGATTGCACGTCGTGCCGGTGTTAGCACCGGTATTATTAGCCATTATTTCCGCGATAAAAACGGTCTGCTGGAAGCAACCATGCGTGATATTACCAGCCAGCTGCGTGATGCAGTTCTGAATCGTCTGCATGCACTGCCGCAGGGTAGCGCAGAACAGCGTCTGCAGGCAATTGTTGGTGGTAATTTTGATGAAACCCAGGTTAGCAGCGCAGCAATGAAAGCATGGCTGGCATTTTGGGCAAGCAGCATGCATCAGCCGATGCTGTATCGTCTGCAGCAGGTTAGCAGTCGTCGTCTGCTGAGCAATCTGGTTAGCGAATTTCGTCGTGAACTGCCTCGTGAACAGGCACAAGAGGCAGGTTATGGTCTGGCAGCACTGATTGATGGTCTGTGGCTGCGTGCAGCACTGAGCGGTAAACCGCTGGATAAAACCCGTGCAAATAGCCTGACCCGTCATTTTATCACCCAGCATCTGCCGACCGATTAATAACCAATTATTGAACACCCTTCGGGGTGTTTTTTTGTTTCTGGTCTCCC</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2989,6 +3124,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>F1_AmeR_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTGAAGGGGTCAGTTGATGTGCTTTCAACTCTGATGAGTCAGTGATGACGAAACCCCCTCTACAAATAATTTTGTTTAACTATGGACTATGTTTTCACATACGAGGGGGATTAGATGAACAAAACCATTGATCAGGTGCGTAAAGGTGATCGTAAAAGCGATCTGCCGGTTCGTCGTCGTCCGCGTCGTAGTGCCGAAGAAACCCGTCGTGATATTCTGGCAAAAGCCGAAGAACTGTTTCGTGAACGTGGTTTTAATGCAGTTGCCATTGCAGATATTGCAAGCGCACTGAATATGAGTCCGGCAAATGTGTTTAAACATTTTAGCAGCAAAAACGCACTGGTTGATGCAATTGGTTTTGGTCAGATTGGTGTTTTTGAACGTCAGATTTGTCCGCTGGATAAAAGCCATGCACCGCTGGATCGTCTGCGTCATCTGGCACGTAATCTGATGGAACAGCATCATCAGGATCATTTCAAACACATACGGGTTTTTATTCAGATCCTGATGACCGCCAAACAGGATATGAAATGTGGCGATTATTACAAAAGCGTGATTGCAAAACTGCTGGCCGAAATTATTCGTGATGGTGTTGAAGCAGGTCTGTATATTGCAACCGATATTCCGGTTCTGGCAGAAACCGTTCTGCATGCACTGACCAGCGTTATTCATCCGGTTCTGATTGCACAAGAAGATATTGGTAATCTGGCAACCCGTTGTGATCAGCTGGTTGATCTGATTGATGCAGGTCTGCGTAATCCGCTGGCAAAATAATAACCAATTATTGAACACCCTAACGGGTGTTTTTTTTTTTTTGGTCTCCC</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -2998,6 +3134,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>H1_HlyIIR_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTGAAGTAGTCACCGGCTGTGCTTGCCGGTCTGATGAGCCTGTGAAGGCGAAACTACCTCTACAAATAATTTTGTTTAAACCCCCGAGATGAAATACATCCTGTTTGAGGTGTGCGAAATGGGTAAAAGCCGTGAACAGACCATGGAAAATATTCTGAAAGCAGCCAAAAAGAAATTCGGCGAACGTGGTTATGAAGGCACCAGCATTCAAGAAATTACCAAAGAAGCCAAAGTTAACGTTGCAATGGCCAGCTATTACTTTAATGGCAAAGAGAACCTGTACTACGAGGTGTTCAAAAAATACGGTCTGGCAAATGAACTGCCGAACTTTCTGGAAAAAAACCAGTTTAATCCGATTAATGCCCTGCGTGAATATCTGACCGTTTTTACCACCCACATTAAAGAAAATCCGGAAATTGGCACCCTGGCCTATGAAGAAATTATCAAAGAAAGCGCACGCCTGGAAAAAATCAAACCGTATTTTATCGGCAGCTTCGAACAGCTGAAAGAAATTCTGCAAGAGGGTGAAAAACAGGGTGTGTTTCACTTTTTTAGCATCAACCATACCATCCATTGGATTACCAGCATTGTTCTGTTTCCGAAATTCAAAAAATTCATCGATAGCCTGGGTCCGAATGAAACCAATGATACCAATCATGAATGGATGCCGGAAGATCTGGTTAGCCGTATTATTAGCGCACTGACCGATAAACCGAACATTTAATAAaacgcatgagAAAGCCCCCGGAAGATCACCTTCCGGGGGCTTTtttattgcgc</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -3007,6 +3144,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>P1_PhlF_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTGAAGCGGTCAACGCATGTGCTTTGCGTTCTGATGAGACAGTGATGTCGAAACCGCCTCTACAAATAATTTTGTTTAACTATGGACTATGTTTGAAAGGGAGAAATACTAGATGGCACGTACCCCGAGCCGTAGCAGCATTGGTAGCCTGCGTAGTCCGCATACCCATAAAGCAATTCTGACCAGCACCATTGAAATCCTGAAAGAATGTGGTTATAGCGGTCTGAGCATTGAAAGCGTTGCACGTCGTGCCGGTGCAAGCAAACCGACCATTTATCGTTGGTGGACCAATAAAGCAGCACTGATTGCCGAAGTGTATGAAAATGAAAGCGAACAGGTGCGTAAATTTCCGGATCTGGGTAGCTTTAAAGCCGATCTGGATTTTCTGCTGCGTAATCTGTGGAAAGTTTGGCGTGAAACCATTTGTGGTGAAGCATTTCGTTGTGTTATTGCAGAAGCACAGCTGGACCCTGCAACCCTGACCCAGCTGAAAGATCAGTTTATGGAACGTCGTCGTGAGATGCCGAAAAAACTGGTTGAAAATGCCATTAGCAATGGTGAACTGCCGAAAGATACCAATCGTGAACTGCTGCTGGATATGATTTTTGGTTTTTGTTGGTATCGCCTGCTGACCGAACAGCTGACCGTTGAACAGGATATTGAAGAATTTACCTTCCTGCTGATTAATGGTGTTTGTCCGGGTACACAGCGTTAATAAggaaacacagAAAAAAGCCCGCACCTGACAGTGCGGGCTTTTTTTTTcgaccaaagg</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -3016,6 +3154,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>P2_PhlF_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTGAAGCGGTCAACGCATGTGCTTTGCGTTCTGATGAGACAGTGATGTCGAAACCGCCTCTACAAATAATTTTGTTTAAGGAGCTATGGACTATGTTTGAAAGGCTGAAATACTAGATGGCACGTACCCCGAGCCGTAGCAGCATTGGTAGCCTGCGTAGTCCGCATACCCATAAAGCAATTCTGACCAGCACCATTGAAATCCTGAAAGAATGTGGTTATAGCGGTCTGAGCATTGAAAGCGTTGCACGTCGTGCCGGTGCAAGCAAACCGACCATTTATCGTTGGTGGACCAATAAAGCAGCACTGATTGCCGAAGTGTATGAAAATGAAAGCGAACAGGTGCGTAAATTTCCGGATCTGGGTAGCTTTAAAGCCGATCTGGATTTTCTGCTGCGTAATCTGTGGAAAGTTTGGCGTGAAACCATTTGTGGTGAAGCATTTCGTTGTGTTATTGCAGAAGCACAGCTGGACCCTGCAACCCTGACCCAGCTGAAAGATCAGTTTATGGAACGTCGTCGTGAGATGCCGAAAAAACTGGTTGAAAATGCCATTAGCAATGGTGAACTGCCGAAAGATACCAATCGTGAACTGCTGCTGGATATGATTTTTGGTTTTTGTTGGTATCGCCTGCTGACCGAACAGCTGACCGTTGAACAGGATATTGAAGAATTTACCTTCCTGCTGATTAATGGTGTTTGTCCGGGTACACAGCGTTAATAAggaaacacagAAAAAAGCCCGCACCTGACAGTGCGGGCTTTTTTTTTcgaccaaagg</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -3025,6 +3164,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>P3_PhlF_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTGAAGCGGTCAACGCATGTGCTTTGCGTTCTGATGAGACAGTGATGTCGAAACCGCCTCTACAAATAATTTTGTTTAACTTTACGAGGGCGATCCTATGGCACGTACCCCGAGCCGTAGCAGCATTGGTAGCCTGCGTAGTCCGCATACCCATAAAGCAATTCTGACCAGCACCATTGAAATCCTGAAAGAATGTGGTTATAGCGGTCTGAGCATTGAAAGCGTTGCACGTCGTGCCGGTGCAAGCAAACCGACCATTTATCGTTGGTGGACCAATAAAGCAGCACTGATTGCCGAAGTGTATGAAAATGAAAGCGAACAGGTGCGTAAATTTCCGGATCTGGGTAGCTTTAAAGCCGATCTGGATTTTCTGCTGCGTAATCTGTGGAAAGTTTGGCGTGAAACCATTTGTGGTGAAGCATTTCGTTGTGTTATTGCAGAAGCACAGCTGGACCCTGCAACCCTGACCCAGCTGAAAGATCAGTTTATGGAACGTCGTCGTGAGATGCCGAAAAAACTGGTTGAAAATGCCATTAGCAATGGTGAACTGCCGAAAGATACCAATCGTGAACTGCTGCTGGATATGATTTTTGGTTTTTGTTGGTATCGCCTGCTGACCGAACAGCTGACCGTTGAACAGGATATTGAAGAATTTACCTTCCTGCTGATTAATGGTGTTTGTCCGGGTACACAGCGTTAATAAggaaacacagAAAAAAGCCCGCACCTGACAGTGCGGGCTTTTTTTTTcgaccaaagg</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -3034,6 +3174,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>S1_SrpR_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTGAAGCGCTCAACGGGTGTGCTTCCCGTTCTGATGAGTCCGTGAGGACGAAAGCGCCTCTACAAATAATTTTGTTTAAGAGTCTATGGACTATGTTTTCACATATGAGATACCAGGATGGCACGTAAAACCGCAGCAGAAGCAGAAGAAACCCGTCAGCGTATTATTGATGCAGCACTGGAAGTTTTTGTTGCACAGGGTGTTAGTGATGCAACCCTGGATCAGATTGCACGTAAAGCCGGTGTTACCCGTGGTGCAGTTTATTGGCATTTTAATGGTAAACTGGAAGTTCTGCAGGCAGTTCTGGCAAGCCGTCAGCATCCGCTGGAACTGGATTTTACACCGGATCTGGGTATTGAACGTAGCTGGGAAGCAGTTGTTGTTGCAATGCTGGATGCAGTTCATAGTCCGCAGAGCAAACAGTTTAGCGAAATTCTGATTTATCAGGGTCTGGATGAAAGCGGTCTGATTCATAATCGTATGGTTCAGGCAAGCGATCGTTTTCTGCAGTATATTCATCAGGTTCTGCGTCATGCAGTTACCCAGGGTGAACTGCCGATTAATCTGGATCTGCAGACCAGCATTGGTGTTTTTAAAGGTCTGATTACCGGTCTGCTGTATGAAGGTCTGCGTAGCAAAGATCAGCAGGCACAGATTATCAAAGTTGCACTGGGTAGCTTTTGGGCACTGCTGCGTGAACCGCCTCGTTTTCTGCTGTGTGAAGAAGCACAGATTAAACAGGTGAAATCCTTCGAATAATAATTCAGCCAAAAAACTTAAGACCGCCGGTCTTGTCCACTACCTTGCAGTAATGCGGTGGACAGGATCGGCGGTTTTCTTTTCTCTTCTCAA</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -3043,6 +3184,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>S2_SrpR_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTGAAGCGCTCAACGGGTGTGCTTCCCGTTCTGATGAGTCCGTGAGGACGAAAGCGCCTCTACAAATAATTTTGTTTAACTATGGACTATGTTTTCACACAGGAAATACCAGGATGGCACGTAAAACCGCAGCAGAAGCAGAAGAAACCCGTCAGCGTATTATTGATGCAGCACTGGAAGTTTTTGTTGCACAGGGTGTTAGTGATGCAACCCTGGATCAGATTGCACGTAAAGCCGGTGTTACCCGTGGTGCAGTTTATTGGCATTTTAATGGTAAACTGGAAGTTCTGCAGGCAGTTCTGGCAAGCCGTCAGCATCCGCTGGAACTGGATTTTACACCGGATCTGGGTATTGAACGTAGCTGGGAAGCAGTTGTTGTTGCAATGCTGGATGCAGTTCATAGTCCGCAGAGCAAACAGTTTAGCGAAATTCTGATTTATCAGGGTCTGGATGAAAGCGGTCTGATTCATAATCGTATGGTTCAGGCAAGCGATCGTTTTCTGCAGTATATTCATCAGGTTCTGCGTCATGCAGTTACCCAGGGTGAACTGCCGATTAATCTGGATCTGCAGACCAGCATTGGTGTTTTTAAAGGTCTGATTACCGGTCTGCTGTATGAAGGTCTGCGTAGCAAAGATCAGCAGGCACAGATTATCAAAGTTGCACTGGGTAGCTTTTGGGCACTGCTGCGTGAACCGCCTCGTTTTCTGCTGTGTGAAGAAGCACAGATTAAACAGGTGAAATCCTTCGAATAATAATTCAGCCAAAAAACTTAAGACCGCCGGTCTTGTCCACTACCTTGCAGTAATGCGGTGGACAGGATCGGCGGTTTTCTTTTCTCTTCTCAA</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -3052,6 +3194,7 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>S3_SrpR_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTGAAGCGCTCAACGGGTGTGCTTCCCGTTCTGATGAGTCCGTGAGGACGAAAGCGCCTCTACAAATAATTTTGTTTAAGAGTCTATGGACTATGTTTTCACAGAGGAGGTACCAGGATGGCACGTAAAACCGCAGCAGAAGCAGAAGAAACCCGTCAGCGTATTATTGATGCAGCACTGGAAGTTTTTGTTGCACAGGGTGTTAGTGATGCAACCCTGGATCAGATTGCACGTAAAGCCGGTGTTACCCGTGGTGCAGTTTATTGGCATTTTAATGGTAAACTGGAAGTTCTGCAGGCAGTTCTGGCAAGCCGTCAGCATCCGCTGGAACTGGATTTTACACCGGATCTGGGTATTGAACGTAGCTGGGAAGCAGTTGTTGTTGCAATGCTGGATGCAGTTCATAGTCCGCAGAGCAAACAGTTTAGCGAAATTCTGATTTATCAGGGTCTGGATGAAAGCGGTCTGATTCATAATCGTATGGTTCAGGCAAGCGATCGTTTTCTGCAGTATATTCATCAGGTTCTGCGTCATGCAGTTACCCAGGGTGAACTGCCGATTAATCTGGATCTGCAGACCAGCATTGGTGTTTTTAAAGGTCTGATTACCGGTCTGCTGTATGAAGGTCTGCGTAGCAAAGATCAGCAGGCACAGATTATCAAAGTTGCACTGGGTAGCTTTTGGGCACTGCTGCGTGAACCGCCTCGTTTTCTGCTGTGTGAAGAAGCACAGATTAAACAGGTGAAATCCTTCGAATAATAATTCAGCCAAAAAACTTAAGACCGCCGGTCTTGTCCACTACCTTGCAGTAATGCGGTGGACAGGATCGGCGGTTTTCTTTTCTCTTCTCAA</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
@@ -3061,7 +3204,18 @@
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json"/>
     <dcterms:title>S4_SrpR_sequence</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:elements>CTGAAGCGCTCAACGGGTGTGCTTCCCGTTCTGATGAGTCCGTGAGGACGAAAGCGCCTCTACAAATAATTTTGTTTAAGAGTCTATGGACTATGTTTTCACAAAGGAAGTACCAGGATGGCACGTAAAACCGCAGCAGAAGCAGAAGAAACCCGTCAGCGTATTATTGATGCAGCACTGGAAGTTTTTGTTGCACAGGGTGTTAGTGATGCAACCCTGGATCAGATTGCACGTAAAGCCGGTGTTACCCGTGGTGCAGTTTATTGGCATTTTAATGGTAAACTGGAAGTTCTGCAGGCAGTTCTGGCAAGCCGTCAGCATCCGCTGGAACTGGATTTTACACCGGATCTGGGTATTGAACGTAGCTGGGAAGCAGTTGTTGTTGCAATGCTGGATGCAGTTCATAGTCCGCAGAGCAAACAGTTTAGCGAAATTCTGATTTATCAGGGTCTGGATGAAAGCGGTCTGATTCATAATCGTATGGTTCAGGCAAGCGATCGTTTTCTGCAGTATATTCATCAGGTTCTGCGTCATGCAGTTACCCAGGGTGAACTGCCGATTAATCTGGATCTGCAGACCAGCATTGGTGTTTTTAAAGGTCTGATTACCGGTCTGCTGTATGAAGGTCTGCGTAGCAAAGATCAGCAGGCACAGATTATCAAAGTTGCACTGGGTAGCTTTTGGGCACTGCTGCGTGAACCGCCTCGTTTTCTGCTGTGTGAAGAAGCACAGATTAAACAGGTGAAATCCTTCGAATAATAATTCAGCCAAAAAACTTAAGACCGCCGGTCTTGTCCACTACCTTGCAGTAATGCGGTGGACAGGATCGGCGGTTTTCTTTTCTCTTCTCAA</sbol:elements>
     <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
   </sbol:Sequence>
+  <prov:Activity rdf:about="http://cellocad.org/cello2sbol/1">
+    <sbol:persistentIdentity rdf:resource="http://cellocad.org/cello2sbol"/>
+    <sbol:displayId>cello2sbol</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>Cello UCF to SBOL conversion</dcterms:title>
+    <dcterms:description>Conversion of the Cello UCF parts and metadata to SBOL2.1</dcterms:description>
+    <ns0:creator>Prashant Vaidyanathan</ns0:creator>
+    <ns0:creator>Chris J. Myers</ns0:creator>
+    <dcterms:created>2017-05-10T22:55:15.100Z</dcterms:created>
+  </prov:Activity>
 </rdf:RDF>
