@@ -5,6 +5,7 @@
     <sbol:displayId>AmtR_protein_production</sbol:displayId>
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <dcterms:title>AmtR_protein_production</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:functionalComponent>
       <sbol:FunctionalComponent rdf:about="http://cellocad.org/AmtR_protein_production/AmtR_functionalComponent/1-Eco1C1G1T0">
         <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmtR_protein_production/AmtR_functionalComponent"/>
@@ -62,6 +63,7 @@
     <sbol:displayId>BM3R1_protein_production</sbol:displayId>
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <dcterms:title>BM3R1_protein_production</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:functionalComponent>
       <sbol:FunctionalComponent rdf:about="http://cellocad.org/BM3R1_protein_production/BM3R1_functionalComponent/1-Eco1C1G1T0">
         <sbol:persistentIdentity rdf:resource="http://cellocad.org/BM3R1_protein_production/BM3R1_functionalComponent"/>
@@ -119,6 +121,7 @@
     <sbol:displayId>BetI_protein_production</sbol:displayId>
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <dcterms:title>BetI_protein_production</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:functionalComponent>
       <sbol:FunctionalComponent rdf:about="http://cellocad.org/BetI_protein_production/BetI_functionalComponent/1-Eco1C1G1T0">
         <sbol:persistentIdentity rdf:resource="http://cellocad.org/BetI_protein_production/BetI_functionalComponent"/>
@@ -176,6 +179,7 @@
     <sbol:displayId>AmeR_protein_production</sbol:displayId>
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <dcterms:title>AmeR_protein_production</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:functionalComponent>
       <sbol:FunctionalComponent rdf:about="http://cellocad.org/AmeR_protein_production/AmeR_functionalComponent/1-Eco1C1G1T0">
         <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmeR_protein_production/AmeR_functionalComponent"/>
@@ -233,6 +237,7 @@
     <sbol:displayId>HlyIIR_protein_production</sbol:displayId>
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <dcterms:title>HlyIIR_protein_production</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:functionalComponent>
       <sbol:FunctionalComponent rdf:about="http://cellocad.org/HlyIIR_protein_production/HlyIIR_functionalComponent/1-Eco1C1G1T0">
         <sbol:persistentIdentity rdf:resource="http://cellocad.org/HlyIIR_protein_production/HlyIIR_functionalComponent"/>
@@ -290,6 +295,7 @@
     <sbol:displayId>PhlF_protein_production</sbol:displayId>
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <dcterms:title>PhlF_protein_production</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:functionalComponent>
       <sbol:FunctionalComponent rdf:about="http://cellocad.org/PhlF_protein_production/PhlF_functionalComponent/1-Eco1C1G1T0">
         <sbol:persistentIdentity rdf:resource="http://cellocad.org/PhlF_protein_production/PhlF_functionalComponent"/>
@@ -347,6 +353,7 @@
     <sbol:displayId>SrpR_protein_production</sbol:displayId>
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <dcterms:title>SrpR_protein_production</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:functionalComponent>
       <sbol:FunctionalComponent rdf:about="http://cellocad.org/SrpR_protein_production/SrpR_functionalComponent/1-Eco1C1G1T0">
         <sbol:persistentIdentity rdf:resource="http://cellocad.org/SrpR_protein_production/SrpR_functionalComponent"/>
@@ -404,6 +411,7 @@
     <sbol:displayId>AmtR_pAmtR_repression</sbol:displayId>
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <dcterms:title>AmtR_pAmtR_repression</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:functionalComponent>
       <sbol:FunctionalComponent rdf:about="http://cellocad.org/AmtR_pAmtR_repression/AmtR_protein_functionalComponent/1-Eco1C1G1T0">
         <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmtR_pAmtR_repression/AmtR_protein_functionalComponent"/>
@@ -461,6 +469,7 @@
     <sbol:displayId>BM3R1_pBM3R1_repression</sbol:displayId>
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <dcterms:title>BM3R1_pBM3R1_repression</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:functionalComponent>
       <sbol:FunctionalComponent rdf:about="http://cellocad.org/BM3R1_pBM3R1_repression/BM3R1_protein_functionalComponent/1-Eco1C1G1T0">
         <sbol:persistentIdentity rdf:resource="http://cellocad.org/BM3R1_pBM3R1_repression/BM3R1_protein_functionalComponent"/>
@@ -518,6 +527,7 @@
     <sbol:displayId>BetI_pBetI_repression</sbol:displayId>
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <dcterms:title>BetI_pBetI_repression</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:functionalComponent>
       <sbol:FunctionalComponent rdf:about="http://cellocad.org/BetI_pBetI_repression/BetI_protein_functionalComponent/1-Eco1C1G1T0">
         <sbol:persistentIdentity rdf:resource="http://cellocad.org/BetI_pBetI_repression/BetI_protein_functionalComponent"/>
@@ -575,6 +585,7 @@
     <sbol:displayId>AmeR_pAmeR_repression</sbol:displayId>
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <dcterms:title>AmeR_pAmeR_repression</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:functionalComponent>
       <sbol:FunctionalComponent rdf:about="http://cellocad.org/AmeR_pAmeR_repression/AmeR_protein_functionalComponent/1-Eco1C1G1T0">
         <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmeR_pAmeR_repression/AmeR_protein_functionalComponent"/>
@@ -632,6 +643,7 @@
     <sbol:displayId>HlyIIR_pHlyIIR_repression</sbol:displayId>
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <dcterms:title>HlyIIR_pHlyIIR_repression</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:functionalComponent>
       <sbol:FunctionalComponent rdf:about="http://cellocad.org/HlyIIR_pHlyIIR_repression/HlyIIR_protein_functionalComponent/1-Eco1C1G1T0">
         <sbol:persistentIdentity rdf:resource="http://cellocad.org/HlyIIR_pHlyIIR_repression/HlyIIR_protein_functionalComponent"/>
@@ -689,6 +701,7 @@
     <sbol:displayId>PhlF_pPhlF_repression</sbol:displayId>
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <dcterms:title>PhlF_pPhlF_repression</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:functionalComponent>
       <sbol:FunctionalComponent rdf:about="http://cellocad.org/PhlF_pPhlF_repression/PhlF_protein_functionalComponent/1-Eco1C1G1T0">
         <sbol:persistentIdentity rdf:resource="http://cellocad.org/PhlF_pPhlF_repression/PhlF_protein_functionalComponent"/>
@@ -746,6 +759,7 @@
     <sbol:displayId>SrpR_pSrpR_repression</sbol:displayId>
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <dcterms:title>SrpR_pSrpR_repression</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:functionalComponent>
       <sbol:FunctionalComponent rdf:about="http://cellocad.org/SrpR_pSrpR_repression/SrpR_protein_functionalComponent/1-Eco1C1G1T0">
         <sbol:persistentIdentity rdf:resource="http://cellocad.org/SrpR_pSrpR_repression/SrpR_protein_functionalComponent"/>
@@ -839,6 +853,7 @@
     <sbol:displayId>AmtR_protein</sbol:displayId>
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <dcterms:title>AmtR_protein</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#Protein"/>
   </sbol:ComponentDefinition>
   <sbol:ComponentDefinition rdf:about="http://cellocad.org/L3S2P55/1-Eco1C1G1T0">
@@ -906,6 +921,7 @@
     <sbol:displayId>BM3R1_protein</sbol:displayId>
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <dcterms:title>BM3R1_protein</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#Protein"/>
   </sbol:ComponentDefinition>
   <sbol:ComponentDefinition rdf:about="http://cellocad.org/L3S2P11/1-Eco1C1G1T0">
@@ -997,6 +1013,7 @@
     <sbol:displayId>BetI_protein</sbol:displayId>
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <dcterms:title>BetI_protein</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#Protein"/>
   </sbol:ComponentDefinition>
   <sbol:ComponentDefinition rdf:about="http://cellocad.org/L3S3P11/1-Eco1C1G1T0">
@@ -1064,6 +1081,7 @@
     <sbol:displayId>AmeR_protein</sbol:displayId>
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <dcterms:title>AmeR_protein</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#Protein"/>
   </sbol:ComponentDefinition>
   <sbol:ComponentDefinition rdf:about="http://cellocad.org/L3S3P31/1-Eco1C1G1T0">
@@ -1131,6 +1149,7 @@
     <sbol:displayId>HlyIIR_protein</sbol:displayId>
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <dcterms:title>HlyIIR_protein</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#Protein"/>
   </sbol:ComponentDefinition>
   <sbol:ComponentDefinition rdf:about="http://cellocad.org/ECK120033736/1-Eco1C1G1T0">
@@ -1198,6 +1217,7 @@
     <sbol:displayId>PhlF_protein</sbol:displayId>
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <dcterms:title>PhlF_protein</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#Protein"/>
   </sbol:ComponentDefinition>
   <sbol:ComponentDefinition rdf:about="http://cellocad.org/ECK120033737/1-Eco1C1G1T0">
@@ -1289,6 +1309,7 @@
     <sbol:displayId>SrpR_protein</sbol:displayId>
     <sbol:version>1-Eco1C1G1T0</sbol:version>
     <dcterms:title>SrpR_protein</dcterms:title>
+    <prov:wasGeneratedBy rdf:resource="http://cellocad.org/cello2sbol/1"/>
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#Protein"/>
   </sbol:ComponentDefinition>
   <sbol:ComponentDefinition rdf:about="http://cellocad.org/ECK120019600/1-Eco1C1G1T0">
@@ -1607,6 +1628,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>1</sbol:start>
             <sbol:end>80</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/A1_AmtR/BydvJ/1-Eco1C1G1T0"/>
@@ -1626,6 +1648,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>81</sbol:start>
             <sbol:end>114</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/A1_AmtR/A1/1-Eco1C1G1T0"/>
@@ -1645,6 +1668,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>115</sbol:start>
             <sbol:end>786</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/A1_AmtR/AmtR/1-Eco1C1G1T0"/>
@@ -1664,6 +1688,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>787</sbol:start>
             <sbol:end>843</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/A1_AmtR/L3S2P55/1-Eco1C1G1T0"/>
@@ -1735,6 +1760,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>1</sbol:start>
             <sbol:end>83</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/B1_BM3R1/SarJ/1-Eco1C1G1T0"/>
@@ -1754,6 +1780,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>84</sbol:start>
             <sbol:end>108</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/B1_BM3R1/B1/1-Eco1C1G1T0"/>
@@ -1773,6 +1800,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>109</sbol:start>
             <sbol:end>690</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/B1_BM3R1/BM3R1/1-Eco1C1G1T0"/>
@@ -1792,6 +1820,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>691</sbol:start>
             <sbol:end>747</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/B1_BM3R1/L3S2P11/1-Eco1C1G1T0"/>
@@ -1863,6 +1892,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>1</sbol:start>
             <sbol:end>83</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/B2_BM3R1/SarJ/1-Eco1C1G1T0"/>
@@ -1882,6 +1912,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>84</sbol:start>
             <sbol:end>120</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/B2_BM3R1/B2/1-Eco1C1G1T0"/>
@@ -1901,6 +1932,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>121</sbol:start>
             <sbol:end>702</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/B2_BM3R1/BM3R1/1-Eco1C1G1T0"/>
@@ -1920,6 +1952,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>703</sbol:start>
             <sbol:end>759</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/B2_BM3R1/L3S2P11/1-Eco1C1G1T0"/>
@@ -1991,6 +2024,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>1</sbol:start>
             <sbol:end>83</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/B3_BM3R1/SarJ/1-Eco1C1G1T0"/>
@@ -2010,6 +2044,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>84</sbol:start>
             <sbol:end>101</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/B3_BM3R1/B3/1-Eco1C1G1T0"/>
@@ -2029,6 +2064,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>102</sbol:start>
             <sbol:end>683</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/B3_BM3R1/BM3R1/1-Eco1C1G1T0"/>
@@ -2048,6 +2084,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>684</sbol:start>
             <sbol:end>740</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/B3_BM3R1/L3S2P11/1-Eco1C1G1T0"/>
@@ -2119,6 +2156,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>1</sbol:start>
             <sbol:end>79</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/E1_BetI/RiboJ57/1-Eco1C1G1T0"/>
@@ -2138,6 +2176,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>80</sbol:start>
             <sbol:end>97</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/E1_BetI/E1/1-Eco1C1G1T0"/>
@@ -2157,6 +2196,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>98</sbol:start>
             <sbol:end>688</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/E1_BetI/BetI/1-Eco1C1G1T0"/>
@@ -2176,6 +2216,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>689</sbol:start>
             <sbol:end>735</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/E1_BetI/L3S3P11/1-Eco1C1G1T0"/>
@@ -2247,6 +2288,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>1</sbol:start>
             <sbol:end>79</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/F1_AmeR/RiboJ54/1-Eco1C1G1T0"/>
@@ -2266,6 +2308,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>80</sbol:start>
             <sbol:end>114</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/F1_AmeR/F1/1-Eco1C1G1T0"/>
@@ -2285,6 +2328,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>115</sbol:start>
             <sbol:end>777</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/F1_AmeR/AmeR/1-Eco1C1G1T0"/>
@@ -2304,6 +2348,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>778</sbol:start>
             <sbol:end>824</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/F1_AmeR/L3S3P31/1-Eco1C1G1T0"/>
@@ -2375,6 +2420,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>1</sbol:start>
             <sbol:end>79</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/H1_HlyIIR/RiboJ51/1-Eco1C1G1T0"/>
@@ -2394,6 +2440,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>80</sbol:start>
             <sbol:end>88</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/H1_HlyIIR/H1/1-Eco1C1G1T0"/>
@@ -2413,6 +2460,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>89</sbol:start>
             <sbol:end>727</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/H1_HlyIIR/HlyIIR/1-Eco1C1G1T0"/>
@@ -2432,6 +2480,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>728</sbol:start>
             <sbol:end>780</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/H1_HlyIIR/ECK120033736/1-Eco1C1G1T0"/>
@@ -2503,6 +2552,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>1</sbol:start>
             <sbol:end>79</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/P1_PhlF/RiboJ53/1-Eco1C1G1T0"/>
@@ -2522,6 +2572,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>80</sbol:start>
             <sbol:end>112</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/P1_PhlF/P1/1-Eco1C1G1T0"/>
@@ -2541,6 +2592,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>113</sbol:start>
             <sbol:end>718</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/P1_PhlF/PhlF/1-Eco1C1G1T0"/>
@@ -2560,6 +2612,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>719</sbol:start>
             <sbol:end>775</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/P1_PhlF/ECK120033737/1-Eco1C1G1T0"/>
@@ -2631,6 +2684,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>1</sbol:start>
             <sbol:end>79</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/P2_PhlF/RiboJ53/1-Eco1C1G1T0"/>
@@ -2650,6 +2704,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>80</sbol:start>
             <sbol:end>116</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/P2_PhlF/P2/1-Eco1C1G1T0"/>
@@ -2669,6 +2724,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>117</sbol:start>
             <sbol:end>722</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/P2_PhlF/PhlF/1-Eco1C1G1T0"/>
@@ -2688,6 +2744,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>723</sbol:start>
             <sbol:end>779</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/P2_PhlF/ECK120033737/1-Eco1C1G1T0"/>
@@ -2759,6 +2816,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>1</sbol:start>
             <sbol:end>79</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/P3_PhlF/RiboJ53/1-Eco1C1G1T0"/>
@@ -2778,6 +2836,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>80</sbol:start>
             <sbol:end>97</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/P3_PhlF/P3/1-Eco1C1G1T0"/>
@@ -2797,6 +2856,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>98</sbol:start>
             <sbol:end>703</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/P3_PhlF/PhlF/1-Eco1C1G1T0"/>
@@ -2816,6 +2876,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>704</sbol:start>
             <sbol:end>760</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/P3_PhlF/ECK120033737/1-Eco1C1G1T0"/>
@@ -2887,6 +2948,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>1</sbol:start>
             <sbol:end>79</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/S1_SrpR/RiboJ10/1-Eco1C1G1T0"/>
@@ -2906,6 +2968,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>80</sbol:start>
             <sbol:end>117</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/S1_SrpR/S1/1-Eco1C1G1T0"/>
@@ -2925,6 +2988,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>118</sbol:start>
             <sbol:end>762</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/S1_SrpR/SrpR/1-Eco1C1G1T0"/>
@@ -2944,6 +3008,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>763</sbol:start>
             <sbol:end>852</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/S1_SrpR/ECK120019600/1-Eco1C1G1T0"/>
@@ -3015,6 +3080,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>1</sbol:start>
             <sbol:end>79</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/S2_SrpR/RiboJ10/1-Eco1C1G1T0"/>
@@ -3034,6 +3100,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>80</sbol:start>
             <sbol:end>113</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/S2_SrpR/S2/1-Eco1C1G1T0"/>
@@ -3053,6 +3120,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>114</sbol:start>
             <sbol:end>758</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/S2_SrpR/SrpR/1-Eco1C1G1T0"/>
@@ -3072,6 +3140,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>759</sbol:start>
             <sbol:end>848</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/S2_SrpR/ECK120029600/1-Eco1C1G1T0"/>
@@ -3143,6 +3212,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>1</sbol:start>
             <sbol:end>79</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/S3_SrpR/RiboJ10/1-Eco1C1G1T0"/>
@@ -3162,6 +3232,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>80</sbol:start>
             <sbol:end>117</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/S3_SrpR/S3/1-Eco1C1G1T0"/>
@@ -3181,6 +3252,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>118</sbol:start>
             <sbol:end>762</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/S3_SrpR/SrpR/1-Eco1C1G1T0"/>
@@ -3200,6 +3272,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>763</sbol:start>
             <sbol:end>852</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/S3_SrpR/ECK120029600/1-Eco1C1G1T0"/>
@@ -3271,6 +3344,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>1</sbol:start>
             <sbol:end>79</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/S4_SrpR/RiboJ10/1-Eco1C1G1T0"/>
@@ -3290,6 +3364,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>80</sbol:start>
             <sbol:end>117</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/S4_SrpR/S4/1-Eco1C1G1T0"/>
@@ -3309,6 +3384,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>118</sbol:start>
             <sbol:end>762</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/S4_SrpR/SrpR/1-Eco1C1G1T0"/>
@@ -3328,6 +3404,7 @@
             <sbol:version>1-Eco1C1G1T0</sbol:version>
             <sbol:start>763</sbol:start>
             <sbol:end>852</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
           </sbol:Range>
         </sbol:location>
         <sbol:component rdf:resource="http://cellocad.org/S4_SrpR/ECK120029600/1-Eco1C1G1T0"/>
@@ -4063,6 +4140,6 @@
     <dcterms:description>Conversion of the Cello UCF parts and metadata to SBOL2.1</dcterms:description>
     <ns0:creator>Prashant Vaidyanathan</ns0:creator>
     <ns0:creator>Chris J. Myers</ns0:creator>
-    <dcterms:created>2017-05-11T00:45:49.630Z</dcterms:created>
+    <dcterms:created>2017-05-11T19:28:37.386Z</dcterms:created>
   </prov:Activity>
 </rdf:RDF>

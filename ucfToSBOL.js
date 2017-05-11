@@ -258,8 +258,8 @@ function convertGatePartsToSBOL() {
                 range.start = start;
                 var end = start + cass_seq.length - 1;
                 range.end = end;
-                range.orientation = 'http://sbols.org/v2#inline'
-                
+                range.orientation = 'http://sbols.org/v2#inline';
+
                 sa.addLocation(range);
                 componentDefinition.addSequenceAnnotation(sa);
 
