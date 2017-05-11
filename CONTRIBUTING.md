@@ -28,7 +28,7 @@ requests](#pull-requests), but please respect the following restrictions:
 A bug is a _demonstrable problem_ that is caused by the code in the repository.
 Good bug reports are extremely helpful - thank you!
 
-Bugs can be reported here: [Create A new issue](https://github.com/CIDARLAB/CelloUCF2SBOL/issues/new).
+Bugs can be reported here: [Create a new issue](https://github.com/CIDARLAB/CelloUCF2SBOL/issues/new).
 
 Guidelines for bug reports:
 
