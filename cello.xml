@@ -1,5 +1,803 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:sbol="http://sbols.org/v2#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#dateTime/" xmlns:ns0="http://purl.org/dc/elements/1.1/">
+  <sbol:ModuleDefinition rdf:about="http://cellocad.org/AmtR_protein_production/1-Eco1C1G1T0">
+    <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmtR_protein_production"/>
+    <sbol:displayId>AmtR_protein_production</sbol:displayId>
+    <sbol:version>1-Eco1C1G1T0</sbol:version>
+    <dcterms:title>AmtR_protein_production</dcterms:title>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/AmtR_protein_production/AmtR_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmtR_protein_production/AmtR_functionalComponent"/>
+        <sbol:displayId>AmtR_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>AmtR_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/AmtR/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/AmtR_protein_production/AmtR_protein_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmtR_protein_production/AmtR_protein_functionalComponent"/>
+        <sbol:displayId>AmtR_protein_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>AmtR_protein_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/AmtR_protein/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://cellocad.org/AmtR_protein_production/AmtR_protein_interaction/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmtR_protein_production/AmtR_protein_interaction"/>
+        <sbol:displayId>AmtR_protein_interaction</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>AmtR_protein_interaction</dcterms:title>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000589"/>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/AmtR_protein_production/AmtR_protein_interaction/AmtR_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmtR_protein_production/AmtR_protein_interaction/AmtR_participation"/>
+            <sbol:displayId>AmtR_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>AmtR_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000645"/>
+            <sbol:participant rdf:resource="http://cellocad.org/AmtR_protein_production/AmtR_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/AmtR_protein_production/AmtR_protein_interaction/AmtR_protein_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmtR_protein_production/AmtR_protein_interaction/AmtR_protein_participation"/>
+            <sbol:displayId>AmtR_protein_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>AmtR_protein_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000011"/>
+            <sbol:participant rdf:resource="http://cellocad.org/AmtR_protein_production/AmtR_protein_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
+  <sbol:ModuleDefinition rdf:about="http://cellocad.org/BM3R1_protein_production/1-Eco1C1G1T0">
+    <sbol:persistentIdentity rdf:resource="http://cellocad.org/BM3R1_protein_production"/>
+    <sbol:displayId>BM3R1_protein_production</sbol:displayId>
+    <sbol:version>1-Eco1C1G1T0</sbol:version>
+    <dcterms:title>BM3R1_protein_production</dcterms:title>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/BM3R1_protein_production/BM3R1_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/BM3R1_protein_production/BM3R1_functionalComponent"/>
+        <sbol:displayId>BM3R1_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>BM3R1_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/BM3R1/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/BM3R1_protein_production/BM3R1_protein_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/BM3R1_protein_production/BM3R1_protein_functionalComponent"/>
+        <sbol:displayId>BM3R1_protein_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>BM3R1_protein_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/BM3R1_protein/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://cellocad.org/BM3R1_protein_production/BM3R1_protein_interaction/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/BM3R1_protein_production/BM3R1_protein_interaction"/>
+        <sbol:displayId>BM3R1_protein_interaction</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>BM3R1_protein_interaction</dcterms:title>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000589"/>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/BM3R1_protein_production/BM3R1_protein_interaction/BM3R1_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/BM3R1_protein_production/BM3R1_protein_interaction/BM3R1_participation"/>
+            <sbol:displayId>BM3R1_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>BM3R1_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000645"/>
+            <sbol:participant rdf:resource="http://cellocad.org/BM3R1_protein_production/BM3R1_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/BM3R1_protein_production/BM3R1_protein_interaction/BM3R1_protein_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/BM3R1_protein_production/BM3R1_protein_interaction/BM3R1_protein_participation"/>
+            <sbol:displayId>BM3R1_protein_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>BM3R1_protein_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000011"/>
+            <sbol:participant rdf:resource="http://cellocad.org/BM3R1_protein_production/BM3R1_protein_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
+  <sbol:ModuleDefinition rdf:about="http://cellocad.org/BetI_protein_production/1-Eco1C1G1T0">
+    <sbol:persistentIdentity rdf:resource="http://cellocad.org/BetI_protein_production"/>
+    <sbol:displayId>BetI_protein_production</sbol:displayId>
+    <sbol:version>1-Eco1C1G1T0</sbol:version>
+    <dcterms:title>BetI_protein_production</dcterms:title>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/BetI_protein_production/BetI_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/BetI_protein_production/BetI_functionalComponent"/>
+        <sbol:displayId>BetI_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>BetI_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/BetI/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/BetI_protein_production/BetI_protein_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/BetI_protein_production/BetI_protein_functionalComponent"/>
+        <sbol:displayId>BetI_protein_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>BetI_protein_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/BetI_protein/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://cellocad.org/BetI_protein_production/BetI_protein_interaction/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/BetI_protein_production/BetI_protein_interaction"/>
+        <sbol:displayId>BetI_protein_interaction</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>BetI_protein_interaction</dcterms:title>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000589"/>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/BetI_protein_production/BetI_protein_interaction/BetI_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/BetI_protein_production/BetI_protein_interaction/BetI_participation"/>
+            <sbol:displayId>BetI_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>BetI_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000645"/>
+            <sbol:participant rdf:resource="http://cellocad.org/BetI_protein_production/BetI_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/BetI_protein_production/BetI_protein_interaction/BetI_protein_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/BetI_protein_production/BetI_protein_interaction/BetI_protein_participation"/>
+            <sbol:displayId>BetI_protein_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>BetI_protein_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000011"/>
+            <sbol:participant rdf:resource="http://cellocad.org/BetI_protein_production/BetI_protein_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
+  <sbol:ModuleDefinition rdf:about="http://cellocad.org/AmeR_protein_production/1-Eco1C1G1T0">
+    <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmeR_protein_production"/>
+    <sbol:displayId>AmeR_protein_production</sbol:displayId>
+    <sbol:version>1-Eco1C1G1T0</sbol:version>
+    <dcterms:title>AmeR_protein_production</dcterms:title>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/AmeR_protein_production/AmeR_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmeR_protein_production/AmeR_functionalComponent"/>
+        <sbol:displayId>AmeR_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>AmeR_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/AmeR/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/AmeR_protein_production/AmeR_protein_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmeR_protein_production/AmeR_protein_functionalComponent"/>
+        <sbol:displayId>AmeR_protein_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>AmeR_protein_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/AmeR_protein/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://cellocad.org/AmeR_protein_production/AmeR_protein_interaction/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmeR_protein_production/AmeR_protein_interaction"/>
+        <sbol:displayId>AmeR_protein_interaction</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>AmeR_protein_interaction</dcterms:title>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000589"/>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/AmeR_protein_production/AmeR_protein_interaction/AmeR_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmeR_protein_production/AmeR_protein_interaction/AmeR_participation"/>
+            <sbol:displayId>AmeR_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>AmeR_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000645"/>
+            <sbol:participant rdf:resource="http://cellocad.org/AmeR_protein_production/AmeR_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/AmeR_protein_production/AmeR_protein_interaction/AmeR_protein_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmeR_protein_production/AmeR_protein_interaction/AmeR_protein_participation"/>
+            <sbol:displayId>AmeR_protein_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>AmeR_protein_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000011"/>
+            <sbol:participant rdf:resource="http://cellocad.org/AmeR_protein_production/AmeR_protein_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
+  <sbol:ModuleDefinition rdf:about="http://cellocad.org/HlyIIR_protein_production/1-Eco1C1G1T0">
+    <sbol:persistentIdentity rdf:resource="http://cellocad.org/HlyIIR_protein_production"/>
+    <sbol:displayId>HlyIIR_protein_production</sbol:displayId>
+    <sbol:version>1-Eco1C1G1T0</sbol:version>
+    <dcterms:title>HlyIIR_protein_production</dcterms:title>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/HlyIIR_protein_production/HlyIIR_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/HlyIIR_protein_production/HlyIIR_functionalComponent"/>
+        <sbol:displayId>HlyIIR_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>HlyIIR_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/HlyIIR/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/HlyIIR_protein_production/HlyIIR_protein_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/HlyIIR_protein_production/HlyIIR_protein_functionalComponent"/>
+        <sbol:displayId>HlyIIR_protein_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>HlyIIR_protein_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/HlyIIR_protein/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://cellocad.org/HlyIIR_protein_production/HlyIIR_protein_interaction/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/HlyIIR_protein_production/HlyIIR_protein_interaction"/>
+        <sbol:displayId>HlyIIR_protein_interaction</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>HlyIIR_protein_interaction</dcterms:title>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000589"/>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/HlyIIR_protein_production/HlyIIR_protein_interaction/HlyIIR_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/HlyIIR_protein_production/HlyIIR_protein_interaction/HlyIIR_participation"/>
+            <sbol:displayId>HlyIIR_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>HlyIIR_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000645"/>
+            <sbol:participant rdf:resource="http://cellocad.org/HlyIIR_protein_production/HlyIIR_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/HlyIIR_protein_production/HlyIIR_protein_interaction/HlyIIR_protein_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/HlyIIR_protein_production/HlyIIR_protein_interaction/HlyIIR_protein_participation"/>
+            <sbol:displayId>HlyIIR_protein_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>HlyIIR_protein_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000011"/>
+            <sbol:participant rdf:resource="http://cellocad.org/HlyIIR_protein_production/HlyIIR_protein_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
+  <sbol:ModuleDefinition rdf:about="http://cellocad.org/PhlF_protein_production/1-Eco1C1G1T0">
+    <sbol:persistentIdentity rdf:resource="http://cellocad.org/PhlF_protein_production"/>
+    <sbol:displayId>PhlF_protein_production</sbol:displayId>
+    <sbol:version>1-Eco1C1G1T0</sbol:version>
+    <dcterms:title>PhlF_protein_production</dcterms:title>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/PhlF_protein_production/PhlF_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/PhlF_protein_production/PhlF_functionalComponent"/>
+        <sbol:displayId>PhlF_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>PhlF_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/PhlF/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/PhlF_protein_production/PhlF_protein_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/PhlF_protein_production/PhlF_protein_functionalComponent"/>
+        <sbol:displayId>PhlF_protein_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>PhlF_protein_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/PhlF_protein/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://cellocad.org/PhlF_protein_production/PhlF_protein_interaction/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/PhlF_protein_production/PhlF_protein_interaction"/>
+        <sbol:displayId>PhlF_protein_interaction</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>PhlF_protein_interaction</dcterms:title>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000589"/>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/PhlF_protein_production/PhlF_protein_interaction/PhlF_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/PhlF_protein_production/PhlF_protein_interaction/PhlF_participation"/>
+            <sbol:displayId>PhlF_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>PhlF_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000645"/>
+            <sbol:participant rdf:resource="http://cellocad.org/PhlF_protein_production/PhlF_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/PhlF_protein_production/PhlF_protein_interaction/PhlF_protein_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/PhlF_protein_production/PhlF_protein_interaction/PhlF_protein_participation"/>
+            <sbol:displayId>PhlF_protein_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>PhlF_protein_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000011"/>
+            <sbol:participant rdf:resource="http://cellocad.org/PhlF_protein_production/PhlF_protein_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
+  <sbol:ModuleDefinition rdf:about="http://cellocad.org/SrpR_protein_production/1-Eco1C1G1T0">
+    <sbol:persistentIdentity rdf:resource="http://cellocad.org/SrpR_protein_production"/>
+    <sbol:displayId>SrpR_protein_production</sbol:displayId>
+    <sbol:version>1-Eco1C1G1T0</sbol:version>
+    <dcterms:title>SrpR_protein_production</dcterms:title>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/SrpR_protein_production/SrpR_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/SrpR_protein_production/SrpR_functionalComponent"/>
+        <sbol:displayId>SrpR_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>SrpR_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/SrpR/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/SrpR_protein_production/SrpR_protein_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/SrpR_protein_production/SrpR_protein_functionalComponent"/>
+        <sbol:displayId>SrpR_protein_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>SrpR_protein_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/SrpR_protein/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://cellocad.org/SrpR_protein_production/SrpR_protein_interaction/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/SrpR_protein_production/SrpR_protein_interaction"/>
+        <sbol:displayId>SrpR_protein_interaction</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>SrpR_protein_interaction</dcterms:title>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000589"/>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/SrpR_protein_production/SrpR_protein_interaction/SrpR_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/SrpR_protein_production/SrpR_protein_interaction/SrpR_participation"/>
+            <sbol:displayId>SrpR_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>SrpR_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000645"/>
+            <sbol:participant rdf:resource="http://cellocad.org/SrpR_protein_production/SrpR_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/SrpR_protein_production/SrpR_protein_interaction/SrpR_protein_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/SrpR_protein_production/SrpR_protein_interaction/SrpR_protein_participation"/>
+            <sbol:displayId>SrpR_protein_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>SrpR_protein_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000011"/>
+            <sbol:participant rdf:resource="http://cellocad.org/SrpR_protein_production/SrpR_protein_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
+  <sbol:ModuleDefinition rdf:about="http://cellocad.org/AmtR_pAmtR_repression/1-Eco1C1G1T0">
+    <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmtR_pAmtR_repression"/>
+    <sbol:displayId>AmtR_pAmtR_repression</sbol:displayId>
+    <sbol:version>1-Eco1C1G1T0</sbol:version>
+    <dcterms:title>AmtR_pAmtR_repression</dcterms:title>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/AmtR_pAmtR_repression/AmtR_protein_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmtR_pAmtR_repression/AmtR_protein_functionalComponent"/>
+        <sbol:displayId>AmtR_protein_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>AmtR_protein_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/AmtR_protein/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/AmtR_pAmtR_repression/pAmtR_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmtR_pAmtR_repression/pAmtR_functionalComponent"/>
+        <sbol:displayId>pAmtR_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>pAmtR_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/pAmtR/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://cellocad.org/AmtR_pAmtR_repression/AmtR_pAmtR_interaction/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmtR_pAmtR_repression/AmtR_pAmtR_interaction"/>
+        <sbol:displayId>AmtR_pAmtR_interaction</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>AmtR_pAmtR_interaction</dcterms:title>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000169"/>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/AmtR_pAmtR_repression/AmtR_pAmtR_interaction/AmtR_protein_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmtR_pAmtR_repression/AmtR_pAmtR_interaction/AmtR_protein_participation"/>
+            <sbol:displayId>AmtR_protein_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>AmtR_protein_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000020"/>
+            <sbol:participant rdf:resource="http://cellocad.org/AmtR_pAmtR_repression/AmtR_protein_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/AmtR_pAmtR_repression/AmtR_pAmtR_interaction/pAmtR_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmtR_pAmtR_repression/AmtR_pAmtR_interaction/pAmtR_participation"/>
+            <sbol:displayId>pAmtR_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>pAmtR_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000642"/>
+            <sbol:participant rdf:resource="http://cellocad.org/AmtR_pAmtR_repression/pAmtR_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
+  <sbol:ModuleDefinition rdf:about="http://cellocad.org/BM3R1_pBM3R1_repression/1-Eco1C1G1T0">
+    <sbol:persistentIdentity rdf:resource="http://cellocad.org/BM3R1_pBM3R1_repression"/>
+    <sbol:displayId>BM3R1_pBM3R1_repression</sbol:displayId>
+    <sbol:version>1-Eco1C1G1T0</sbol:version>
+    <dcterms:title>BM3R1_pBM3R1_repression</dcterms:title>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/BM3R1_pBM3R1_repression/BM3R1_protein_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/BM3R1_pBM3R1_repression/BM3R1_protein_functionalComponent"/>
+        <sbol:displayId>BM3R1_protein_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>BM3R1_protein_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/BM3R1_protein/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/BM3R1_pBM3R1_repression/pBM3R1_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/BM3R1_pBM3R1_repression/pBM3R1_functionalComponent"/>
+        <sbol:displayId>pBM3R1_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>pBM3R1_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/pBM3R1/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://cellocad.org/BM3R1_pBM3R1_repression/BM3R1_pBM3R1_interaction/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/BM3R1_pBM3R1_repression/BM3R1_pBM3R1_interaction"/>
+        <sbol:displayId>BM3R1_pBM3R1_interaction</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>BM3R1_pBM3R1_interaction</dcterms:title>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000169"/>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/BM3R1_pBM3R1_repression/BM3R1_pBM3R1_interaction/BM3R1_protein_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/BM3R1_pBM3R1_repression/BM3R1_pBM3R1_interaction/BM3R1_protein_participation"/>
+            <sbol:displayId>BM3R1_protein_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>BM3R1_protein_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000020"/>
+            <sbol:participant rdf:resource="http://cellocad.org/BM3R1_pBM3R1_repression/BM3R1_protein_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/BM3R1_pBM3R1_repression/BM3R1_pBM3R1_interaction/pBM3R1_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/BM3R1_pBM3R1_repression/BM3R1_pBM3R1_interaction/pBM3R1_participation"/>
+            <sbol:displayId>pBM3R1_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>pBM3R1_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000642"/>
+            <sbol:participant rdf:resource="http://cellocad.org/BM3R1_pBM3R1_repression/pBM3R1_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
+  <sbol:ModuleDefinition rdf:about="http://cellocad.org/BetI_pBetI_repression/1-Eco1C1G1T0">
+    <sbol:persistentIdentity rdf:resource="http://cellocad.org/BetI_pBetI_repression"/>
+    <sbol:displayId>BetI_pBetI_repression</sbol:displayId>
+    <sbol:version>1-Eco1C1G1T0</sbol:version>
+    <dcterms:title>BetI_pBetI_repression</dcterms:title>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/BetI_pBetI_repression/BetI_protein_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/BetI_pBetI_repression/BetI_protein_functionalComponent"/>
+        <sbol:displayId>BetI_protein_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>BetI_protein_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/BetI_protein/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/BetI_pBetI_repression/pBetI_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/BetI_pBetI_repression/pBetI_functionalComponent"/>
+        <sbol:displayId>pBetI_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>pBetI_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/pBetI/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://cellocad.org/BetI_pBetI_repression/BetI_pBetI_interaction/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/BetI_pBetI_repression/BetI_pBetI_interaction"/>
+        <sbol:displayId>BetI_pBetI_interaction</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>BetI_pBetI_interaction</dcterms:title>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000169"/>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/BetI_pBetI_repression/BetI_pBetI_interaction/BetI_protein_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/BetI_pBetI_repression/BetI_pBetI_interaction/BetI_protein_participation"/>
+            <sbol:displayId>BetI_protein_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>BetI_protein_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000020"/>
+            <sbol:participant rdf:resource="http://cellocad.org/BetI_pBetI_repression/BetI_protein_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/BetI_pBetI_repression/BetI_pBetI_interaction/pBetI_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/BetI_pBetI_repression/BetI_pBetI_interaction/pBetI_participation"/>
+            <sbol:displayId>pBetI_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>pBetI_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000642"/>
+            <sbol:participant rdf:resource="http://cellocad.org/BetI_pBetI_repression/pBetI_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
+  <sbol:ModuleDefinition rdf:about="http://cellocad.org/AmeR_pAmeR_repression/1-Eco1C1G1T0">
+    <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmeR_pAmeR_repression"/>
+    <sbol:displayId>AmeR_pAmeR_repression</sbol:displayId>
+    <sbol:version>1-Eco1C1G1T0</sbol:version>
+    <dcterms:title>AmeR_pAmeR_repression</dcterms:title>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/AmeR_pAmeR_repression/AmeR_protein_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmeR_pAmeR_repression/AmeR_protein_functionalComponent"/>
+        <sbol:displayId>AmeR_protein_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>AmeR_protein_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/AmeR_protein/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/AmeR_pAmeR_repression/pAmeR_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmeR_pAmeR_repression/pAmeR_functionalComponent"/>
+        <sbol:displayId>pAmeR_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>pAmeR_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/pAmeR/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://cellocad.org/AmeR_pAmeR_repression/AmeR_pAmeR_interaction/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmeR_pAmeR_repression/AmeR_pAmeR_interaction"/>
+        <sbol:displayId>AmeR_pAmeR_interaction</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>AmeR_pAmeR_interaction</dcterms:title>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000169"/>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/AmeR_pAmeR_repression/AmeR_pAmeR_interaction/AmeR_protein_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmeR_pAmeR_repression/AmeR_pAmeR_interaction/AmeR_protein_participation"/>
+            <sbol:displayId>AmeR_protein_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>AmeR_protein_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000020"/>
+            <sbol:participant rdf:resource="http://cellocad.org/AmeR_pAmeR_repression/AmeR_protein_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/AmeR_pAmeR_repression/AmeR_pAmeR_interaction/pAmeR_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmeR_pAmeR_repression/AmeR_pAmeR_interaction/pAmeR_participation"/>
+            <sbol:displayId>pAmeR_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>pAmeR_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000642"/>
+            <sbol:participant rdf:resource="http://cellocad.org/AmeR_pAmeR_repression/pAmeR_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
+  <sbol:ModuleDefinition rdf:about="http://cellocad.org/HlyIIR_pHlyIIR_repression/1-Eco1C1G1T0">
+    <sbol:persistentIdentity rdf:resource="http://cellocad.org/HlyIIR_pHlyIIR_repression"/>
+    <sbol:displayId>HlyIIR_pHlyIIR_repression</sbol:displayId>
+    <sbol:version>1-Eco1C1G1T0</sbol:version>
+    <dcterms:title>HlyIIR_pHlyIIR_repression</dcterms:title>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/HlyIIR_pHlyIIR_repression/HlyIIR_protein_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/HlyIIR_pHlyIIR_repression/HlyIIR_protein_functionalComponent"/>
+        <sbol:displayId>HlyIIR_protein_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>HlyIIR_protein_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/HlyIIR_protein/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/HlyIIR_pHlyIIR_repression/pHlyIIR_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/HlyIIR_pHlyIIR_repression/pHlyIIR_functionalComponent"/>
+        <sbol:displayId>pHlyIIR_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>pHlyIIR_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/pHlyIIR/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://cellocad.org/HlyIIR_pHlyIIR_repression/HlyIIR_pHlyIIR_interaction/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/HlyIIR_pHlyIIR_repression/HlyIIR_pHlyIIR_interaction"/>
+        <sbol:displayId>HlyIIR_pHlyIIR_interaction</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>HlyIIR_pHlyIIR_interaction</dcterms:title>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000169"/>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/HlyIIR_pHlyIIR_repression/HlyIIR_pHlyIIR_interaction/HlyIIR_protein_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/HlyIIR_pHlyIIR_repression/HlyIIR_pHlyIIR_interaction/HlyIIR_protein_participation"/>
+            <sbol:displayId>HlyIIR_protein_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>HlyIIR_protein_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000020"/>
+            <sbol:participant rdf:resource="http://cellocad.org/HlyIIR_pHlyIIR_repression/HlyIIR_protein_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/HlyIIR_pHlyIIR_repression/HlyIIR_pHlyIIR_interaction/pHlyIIR_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/HlyIIR_pHlyIIR_repression/HlyIIR_pHlyIIR_interaction/pHlyIIR_participation"/>
+            <sbol:displayId>pHlyIIR_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>pHlyIIR_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000642"/>
+            <sbol:participant rdf:resource="http://cellocad.org/HlyIIR_pHlyIIR_repression/pHlyIIR_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
+  <sbol:ModuleDefinition rdf:about="http://cellocad.org/PhlF_pPhlF_repression/1-Eco1C1G1T0">
+    <sbol:persistentIdentity rdf:resource="http://cellocad.org/PhlF_pPhlF_repression"/>
+    <sbol:displayId>PhlF_pPhlF_repression</sbol:displayId>
+    <sbol:version>1-Eco1C1G1T0</sbol:version>
+    <dcterms:title>PhlF_pPhlF_repression</dcterms:title>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/PhlF_pPhlF_repression/PhlF_protein_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/PhlF_pPhlF_repression/PhlF_protein_functionalComponent"/>
+        <sbol:displayId>PhlF_protein_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>PhlF_protein_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/PhlF_protein/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/PhlF_pPhlF_repression/pPhlF_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/PhlF_pPhlF_repression/pPhlF_functionalComponent"/>
+        <sbol:displayId>pPhlF_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>pPhlF_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/pPhlF/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://cellocad.org/PhlF_pPhlF_repression/PhlF_pPhlF_interaction/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/PhlF_pPhlF_repression/PhlF_pPhlF_interaction"/>
+        <sbol:displayId>PhlF_pPhlF_interaction</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>PhlF_pPhlF_interaction</dcterms:title>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000169"/>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/PhlF_pPhlF_repression/PhlF_pPhlF_interaction/PhlF_protein_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/PhlF_pPhlF_repression/PhlF_pPhlF_interaction/PhlF_protein_participation"/>
+            <sbol:displayId>PhlF_protein_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>PhlF_protein_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000020"/>
+            <sbol:participant rdf:resource="http://cellocad.org/PhlF_pPhlF_repression/PhlF_protein_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/PhlF_pPhlF_repression/PhlF_pPhlF_interaction/pPhlF_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/PhlF_pPhlF_repression/PhlF_pPhlF_interaction/pPhlF_participation"/>
+            <sbol:displayId>pPhlF_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>pPhlF_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000642"/>
+            <sbol:participant rdf:resource="http://cellocad.org/PhlF_pPhlF_repression/pPhlF_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
+  <sbol:ModuleDefinition rdf:about="http://cellocad.org/SrpR_pSrpR_repression/1-Eco1C1G1T0">
+    <sbol:persistentIdentity rdf:resource="http://cellocad.org/SrpR_pSrpR_repression"/>
+    <sbol:displayId>SrpR_pSrpR_repression</sbol:displayId>
+    <sbol:version>1-Eco1C1G1T0</sbol:version>
+    <dcterms:title>SrpR_pSrpR_repression</dcterms:title>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/SrpR_pSrpR_repression/SrpR_protein_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/SrpR_pSrpR_repression/SrpR_protein_functionalComponent"/>
+        <sbol:displayId>SrpR_protein_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>SrpR_protein_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/SrpR_protein/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://cellocad.org/SrpR_pSrpR_repression/pSrpR_functionalComponent/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/SrpR_pSrpR_repression/pSrpR_functionalComponent"/>
+        <sbol:displayId>pSrpR_functionalComponent</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>pSrpR_functionalComponent</dcterms:title>
+        <sbol:definition rdf:resource="http://cellocad.org/pSrpR/1-Eco1C1G1T0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://cellocad.org/SrpR_pSrpR_repression/SrpR_pSrpR_interaction/1-Eco1C1G1T0">
+        <sbol:persistentIdentity rdf:resource="http://cellocad.org/SrpR_pSrpR_repression/SrpR_pSrpR_interaction"/>
+        <sbol:displayId>SrpR_pSrpR_interaction</sbol:displayId>
+        <sbol:version>1-Eco1C1G1T0</sbol:version>
+        <dcterms:title>SrpR_pSrpR_interaction</dcterms:title>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000169"/>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/SrpR_pSrpR_repression/SrpR_pSrpR_interaction/SrpR_protein_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/SrpR_pSrpR_repression/SrpR_pSrpR_interaction/SrpR_protein_participation"/>
+            <sbol:displayId>SrpR_protein_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>SrpR_protein_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000020"/>
+            <sbol:participant rdf:resource="http://cellocad.org/SrpR_pSrpR_repression/SrpR_protein_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://cellocad.org/SrpR_pSrpR_repression/SrpR_pSrpR_interaction/pSrpR_participation/1-Eco1C1G1T0">
+            <sbol:persistentIdentity rdf:resource="http://cellocad.org/SrpR_pSrpR_repression/SrpR_pSrpR_interaction/pSrpR_participation"/>
+            <sbol:displayId>pSrpR_participation</sbol:displayId>
+            <sbol:version>1-Eco1C1G1T0</sbol:version>
+            <dcterms:title>pSrpR_participation</dcterms:title>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000642"/>
+            <sbol:participant rdf:resource="http://cellocad.org/SrpR_pSrpR_repression/pSrpR_functionalComponent/1-Eco1C1G1T0"/>
+          </sbol:Participation>
+        </sbol:participation>
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
   <sbol:ComponentDefinition rdf:about="http://cellocad.org/BydvJ/1-Eco1C1G1T0">
     <sbol:persistentIdentity rdf:resource="http://cellocad.org/BydvJ"/>
     <sbol:displayId>BydvJ</sbol:displayId>
@@ -35,6 +833,13 @@
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
     <sbol:sequence rdf:resource="http://cellocad.org/AmtR_sequence/1-Eco1C1G1T0"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://cellocad.org/AmtR_protein/1-Eco1C1G1T0">
+    <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmtR_protein"/>
+    <sbol:displayId>AmtR_protein</sbol:displayId>
+    <sbol:version>1-Eco1C1G1T0</sbol:version>
+    <dcterms:title>AmtR_protein</dcterms:title>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#Protein"/>
   </sbol:ComponentDefinition>
   <sbol:ComponentDefinition rdf:about="http://cellocad.org/L3S2P55/1-Eco1C1G1T0">
     <sbol:persistentIdentity rdf:resource="http://cellocad.org/L3S2P55"/>
@@ -95,6 +900,13 @@
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
     <sbol:sequence rdf:resource="http://cellocad.org/BM3R1_sequence/1-Eco1C1G1T0"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://cellocad.org/BM3R1_protein/1-Eco1C1G1T0">
+    <sbol:persistentIdentity rdf:resource="http://cellocad.org/BM3R1_protein"/>
+    <sbol:displayId>BM3R1_protein</sbol:displayId>
+    <sbol:version>1-Eco1C1G1T0</sbol:version>
+    <dcterms:title>BM3R1_protein</dcterms:title>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#Protein"/>
   </sbol:ComponentDefinition>
   <sbol:ComponentDefinition rdf:about="http://cellocad.org/L3S2P11/1-Eco1C1G1T0">
     <sbol:persistentIdentity rdf:resource="http://cellocad.org/L3S2P11"/>
@@ -180,6 +992,13 @@
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
     <sbol:sequence rdf:resource="http://cellocad.org/BetI_sequence/1-Eco1C1G1T0"/>
   </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://cellocad.org/BetI_protein/1-Eco1C1G1T0">
+    <sbol:persistentIdentity rdf:resource="http://cellocad.org/BetI_protein"/>
+    <sbol:displayId>BetI_protein</sbol:displayId>
+    <sbol:version>1-Eco1C1G1T0</sbol:version>
+    <dcterms:title>BetI_protein</dcterms:title>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#Protein"/>
+  </sbol:ComponentDefinition>
   <sbol:ComponentDefinition rdf:about="http://cellocad.org/L3S3P11/1-Eco1C1G1T0">
     <sbol:persistentIdentity rdf:resource="http://cellocad.org/L3S3P11"/>
     <sbol:displayId>L3S3P11</sbol:displayId>
@@ -239,6 +1058,13 @@
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
     <sbol:sequence rdf:resource="http://cellocad.org/AmeR_sequence/1-Eco1C1G1T0"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://cellocad.org/AmeR_protein/1-Eco1C1G1T0">
+    <sbol:persistentIdentity rdf:resource="http://cellocad.org/AmeR_protein"/>
+    <sbol:displayId>AmeR_protein</sbol:displayId>
+    <sbol:version>1-Eco1C1G1T0</sbol:version>
+    <dcterms:title>AmeR_protein</dcterms:title>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#Protein"/>
   </sbol:ComponentDefinition>
   <sbol:ComponentDefinition rdf:about="http://cellocad.org/L3S3P31/1-Eco1C1G1T0">
     <sbol:persistentIdentity rdf:resource="http://cellocad.org/L3S3P31"/>
@@ -300,6 +1126,13 @@
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
     <sbol:sequence rdf:resource="http://cellocad.org/HlyIIR_sequence/1-Eco1C1G1T0"/>
   </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://cellocad.org/HlyIIR_protein/1-Eco1C1G1T0">
+    <sbol:persistentIdentity rdf:resource="http://cellocad.org/HlyIIR_protein"/>
+    <sbol:displayId>HlyIIR_protein</sbol:displayId>
+    <sbol:version>1-Eco1C1G1T0</sbol:version>
+    <dcterms:title>HlyIIR_protein</dcterms:title>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#Protein"/>
+  </sbol:ComponentDefinition>
   <sbol:ComponentDefinition rdf:about="http://cellocad.org/ECK120033736/1-Eco1C1G1T0">
     <sbol:persistentIdentity rdf:resource="http://cellocad.org/ECK120033736"/>
     <sbol:displayId>ECK120033736</sbol:displayId>
@@ -359,6 +1192,13 @@
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
     <sbol:sequence rdf:resource="http://cellocad.org/PhlF_sequence/1-Eco1C1G1T0"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://cellocad.org/PhlF_protein/1-Eco1C1G1T0">
+    <sbol:persistentIdentity rdf:resource="http://cellocad.org/PhlF_protein"/>
+    <sbol:displayId>PhlF_protein</sbol:displayId>
+    <sbol:version>1-Eco1C1G1T0</sbol:version>
+    <dcterms:title>PhlF_protein</dcterms:title>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#Protein"/>
   </sbol:ComponentDefinition>
   <sbol:ComponentDefinition rdf:about="http://cellocad.org/ECK120033737/1-Eco1C1G1T0">
     <sbol:persistentIdentity rdf:resource="http://cellocad.org/ECK120033737"/>
@@ -443,6 +1283,13 @@
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
     <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
     <sbol:sequence rdf:resource="http://cellocad.org/SrpR_sequence/1-Eco1C1G1T0"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://cellocad.org/SrpR_protein/1-Eco1C1G1T0">
+    <sbol:persistentIdentity rdf:resource="http://cellocad.org/SrpR_protein"/>
+    <sbol:displayId>SrpR_protein</sbol:displayId>
+    <sbol:version>1-Eco1C1G1T0</sbol:version>
+    <dcterms:title>SrpR_protein</dcterms:title>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#Protein"/>
   </sbol:ComponentDefinition>
   <sbol:ComponentDefinition rdf:about="http://cellocad.org/ECK120019600/1-Eco1C1G1T0">
     <sbol:persistentIdentity rdf:resource="http://cellocad.org/ECK120019600"/>
@@ -3216,6 +4063,6 @@
     <dcterms:description>Conversion of the Cello UCF parts and metadata to SBOL2.1</dcterms:description>
     <ns0:creator>Prashant Vaidyanathan</ns0:creator>
     <ns0:creator>Chris J. Myers</ns0:creator>
-    <dcterms:created>2017-05-10T22:55:15.100Z</dcterms:created>
+    <dcterms:created>2017-05-11T00:45:49.630Z</dcterms:created>
   </prov:Activity>
 </rdf:RDF>

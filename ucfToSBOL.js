@@ -4,6 +4,7 @@ var terms = SBOLDocument.terms;
 
 //Constant Terms
 var so = 'http://identifiers.org/so/'
+var sbo = 'http://identifiers.org/biomodels.sbo/';
 const version = '1-Eco1C1G1T0';
 const derivedFrom = 'https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json';
 const datecreated = new Date("April 1, 2016 00:00:00");
@@ -12,7 +13,12 @@ const urlsuffix = 'http://cellocad.org/';
 const ownedBy = 'http://wiki.synbiohub.org/wiki/Terms/synbiohub#/ownedBy';
 const provNS = 'http://www.w3.org/ns/prov#';
 const dcNS = 'http://purl.org/dc/elements/1.1/';
-
+const productionSO = sbo + 'SBO:0000589';
+const inhibitionSO = sbo + 'SBO:0000169';
+const inhibitorSO = sbo + 'SBO:0000020';
+const inhibitedSO = sbo + 'SBO:0000642';
+const templateSO = sbo + 'SBO:0000645';
+const productSO = sbo + 'SBO:0000011';
 
 const ymax = 'http://mathworld.wolfram.com/Maximum.html';
 const ymin = 'http://mathworld.wolfram.com/Minimum.html';
@@ -70,7 +76,7 @@ ucf.forEach(function (collection) {
 }, this);
 
 var partsSBOL = {}
-
+var moduleDefnMap = {}
 
 convertPartsToSBOL();
 convertGatePartsToSBOL();
@@ -120,7 +126,74 @@ function convertPartsToSBOL() {
             componentDefinition.addRole(getPartType(part.type));
             componentDefinition.addType(SBOLDocument.terms.dnaRegion);
 
-            if(part.type === ''){
+            if(part.type === 'cds'){
+                const proteinComponentDefinition = sbol.componentDefinition();
+                proteinComponentDefinition.version = version;
+                proteinComponentDefinition.displayId = componentDefinition.displayId + '_protein';
+                proteinComponentDefinition.name = componentDefinition.displayId + '_protein';
+                proteinComponentDefinition.persistentIdentity = urlsuffix + proteinComponentDefinition.displayId;
+                proteinComponentDefinition.uri = proteinComponentDefinition.persistentIdentity + '/' + proteinComponentDefinition.version;
+                proteinComponentDefinition.addType(SBOLDocument.terms.protein);
+                proteinComponentDefinition.addUriAnnotation(provNS + 'wasGeneratedBy', actURI);
+                partsSBOL[partName + '_protein'] = proteinComponentDefinition.uri;
+
+                const moduleDefinition = sbol.moduleDefinition();
+                moduleDefinition.name = proteinComponentDefinition.displayId + '_production';
+                moduleDefinition.version = version;
+                moduleDefinition.displayId = proteinComponentDefinition.displayId + '_production';
+                moduleDefinition.persistentIdentity = urlsuffix + moduleDefinition.displayId;
+                moduleDefinition.uri = moduleDefinition.persistentIdentity + '/' + moduleDefinition.version;
+                moduleDefinition.addUriAnnotation(provNS + 'wasGeneratedBy', actURI);
+
+                const functionalComponentCDS = sbol.functionalComponent();
+                functionalComponentCDS.version = version;
+                functionalComponentCDS.displayId = componentDefinition.displayId + '_functionalComponent';
+                functionalComponentCDS.name = componentDefinition.name + '_functionalComponent';
+                functionalComponentCDS.persistentIdentity = moduleDefinition.persistentIdentity + '/' + functionalComponentCDS.displayId;
+                functionalComponentCDS.uri = functionalComponentCDS.persistentIdentity + '/' + functionalComponentCDS.version;
+                functionalComponentCDS.definition = componentDefinition;
+
+                const functionalComponentProt = sbol.functionalComponent();
+                functionalComponentProt.version = version;
+                functionalComponentProt.displayId = proteinComponentDefinition.displayId + '_functionalComponent';
+                functionalComponentProt.name = proteinComponentDefinition.name + '_functionalComponent';
+                functionalComponentProt.persistentIdentity = moduleDefinition.persistentIdentity + '/' + functionalComponentProt.displayId;
+                functionalComponentProt.uri = functionalComponentProt.persistentIdentity + '/' + functionalComponentProt.version;
+                functionalComponentProt.definition = proteinComponentDefinition;
+
+                const interaction = sbol.interaction();
+                interaction.displayId = proteinComponentDefinition.displayId + '_interaction';
+                interaction.name = interaction.displayId;
+                interaction.version = version;
+                interaction.persistentIdentity = moduleDefinition.persistentIdentity + '/' + interaction.displayId;
+                interaction.uri = interaction.persistentIdentity + '/' + interaction.version;
+                interaction.addType(productionSO);
+                
+
+                const participationCDS = sbol.participation();
+                participationCDS.version = version;
+                participationCDS.name = componentDefinition.displayId + '_participation';
+                participationCDS.displayId = componentDefinition.displayId + '_participation';
+                participationCDS.persistentIdentity = interaction.persistentIdentity + '/' + participationCDS.displayId;
+                participationCDS.uri = participationCDS.persistentIdentity + '/' + participationCDS.version;
+                participationCDS.addRole(templateSO);
+                participationCDS.participant = functionalComponentCDS;
+
+                const participationProt = sbol.participation();
+                participationProt.version = version;
+                participationProt.name = proteinComponentDefinition.displayId + '_participation';
+                participationProt.displayId = proteinComponentDefinition.displayId + '_participation';
+                participationProt.persistentIdentity = interaction.persistentIdentity + '/' + participationProt.displayId;
+                participationProt.uri = participationProt.persistentIdentity + '/' + participationProt.version;
+                participationProt.addRole(productSO);
+                participationProt.participant = functionalComponentProt;
+
+                interaction.addParticipation(participationCDS);
+                interaction.addParticipation(participationProt);
+
+                moduleDefinition.addFunctionalComponent(functionalComponentCDS);
+                moduleDefinition.addFunctionalComponent(functionalComponentProt);
+                moduleDefinition.addInteraction(interaction);
 
             }
 
@@ -188,6 +261,72 @@ function convertGatePartsToSBOL() {
 
                 sa.addLocation(range);
                 componentDefinition.addSequenceAnnotation(sa);
+
+                if(partsMap[cassette].type === 'cds'){
+                    if(!(cassette in moduleDefnMap)){
+                        //console.log('Creating Module definition for ' + cassette + ' and ' + gpart.promoter);
+
+                        const moduleDefinition = sbol.moduleDefinition();
+                        moduleDefinition.version = version;
+                        moduleDefinition.name = cassette + '_' + gpart.promoter + '_repression';
+                        moduleDefinition.displayId = cassette + '_' + gpart.promoter + '_repression';
+                        moduleDefinition.persistentIdentity = urlsuffix + moduleDefinition.displayId;
+                        moduleDefinition.uri = moduleDefinition.persistentIdentity + '/' + moduleDefinition.version;
+                        moduleDefinition.addUriAnnotation(provNS + 'wasGeneratedBy', actURI);
+                        
+                        const functionalComponentCDS = sbol.functionalComponent();
+                        functionalComponentCDS.version = version;
+                        functionalComponentCDS.name = cassette + '_protein_functionalComponent';
+                        functionalComponentCDS.displayId = cassette + '_protein_functionalComponent';
+                        functionalComponentCDS.persistentIdentity = moduleDefinition.persistentIdentity + '/' + functionalComponentCDS.displayId;
+                        functionalComponentCDS.uri = functionalComponentCDS.persistentIdentity + '/' + functionalComponentCDS.version;
+                        functionalComponentCDS.definition = sbol.lookupURI(partsSBOL[cassette + '_protein']);
+
+                        const functionalComponentProm = sbol.functionalComponent();
+                        functionalComponentProm.version = version;
+                        functionalComponentProm.name = gpart.promoter + '_functionalComponent';
+                        functionalComponentProm.displayId = gpart.promoter + '_functionalComponent';
+                        functionalComponentProm.persistentIdentity = moduleDefinition.persistentIdentity + '/' + functionalComponentProm.displayId;
+                        functionalComponentProm.uri = functionalComponentProm.persistentIdentity + '/' + functionalComponentProm.version;
+                        functionalComponentProm.definition = sbol.lookupURI(partsSBOL[gpart.promoter]);
+
+                        const interaction = sbol.interaction();
+                        interaction.version = version;
+                        interaction.name = cassette + '_' + gpart.promoter + '_interaction';
+                        interaction.displayId = cassette + '_' + gpart.promoter + '_interaction';
+                        interaction.persistentIdentity =  moduleDefinition.persistentIdentity + '/' + interaction.displayId;
+                        interaction.uri = interaction.persistentIdentity + '/' + interaction.version;
+                        interaction.addType(inhibitionSO);
+
+                        const participantProt = sbol.participation();
+                        participantProt.version = version;
+                        participantProt.name = cassette + '_protein_participation';
+                        participantProt.displayId = cassette + '_protein_participation';
+                        participantProt.persistentIdentity = interaction.persistentIdentity + '/' + participantProt.displayId;
+                        participantProt.uri = participantProt.persistentIdentity + '/' + participantProt.version;
+                        participantProt.addRole(inhibitorSO);
+                        participantProt.participant = functionalComponentCDS;
+
+                        const participantProm = sbol.participation();
+                        participantProm.version = version;
+                        participantProm.name = gpart.promoter + '_participation';
+                        participantProm.displayId = gpart.promoter + '_participation';
+                        participantProm.persistentIdentity = interaction.persistentIdentity + '/' + participantProm.displayId;
+                        participantProm.uri = participantProm.persistentIdentity + '/' + participantProm.version;
+                        participantProm.addRole(inhibitedSO);
+                        participantProm.participant = functionalComponentProm;
+                        
+                        interaction.addParticipation(participantProt);
+                        interaction.addParticipation(participantProm);
+
+                        moduleDefinition.addFunctionalComponent(functionalComponentCDS);
+                        moduleDefinition.addFunctionalComponent(functionalComponentProm);
+                        moduleDefinition.addInteraction(interaction);
+
+
+                        moduleDefnMap[cassette] = gpart.promoter;
+                    }
+                }
 
                 start += cass_seq.length;
 
