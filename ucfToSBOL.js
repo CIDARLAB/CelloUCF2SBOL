@@ -1,43 +1,51 @@
+//Dependencies
 var fs = require('fs');
 var SBOLDocument = require('sboljs');
-var terms = SBOLDocument.terms;
+
+
+//IO Locations
+var ucfFilepath = 'ucf/Eco1C1G1T0.UCF.json';
+var resultFilepath = 'result/cello.xml';
 
 //Constant Terms
-var so = 'http://identifiers.org/so/'
-var sbo = 'http://identifiers.org/biomodels.sbo/';
 const version = '1-Eco1C1G1T0';
+const urlprefix = 'http://cellocad.org/';
 const derivedFrom = 'https://github.com/CIDARLAB/cello/blob/master/resources/UCF/Eco1C1G1T0.UCF.json';
+
 const datecreated = new Date("April 1, 2016 00:00:00");
 const today = new Date();
-const urlsuffix = 'http://cellocad.org/';
-const ownedBy = 'http://wiki.synbiohub.org/wiki/Terms/synbiohub#/ownedBy';
+
+var terms = SBOLDocument.terms;
+var so = 'http://identifiers.org/so/'
+var sbo = 'http://identifiers.org/biomodels.sbo/';
 const provNS = 'http://www.w3.org/ns/prov#';
 const dcNS = 'http://purl.org/dc/elements/1.1/';
+const ownedBy = 'http://wiki.synbiohub.org/wiki/Terms/synbiohub#/ownedBy';
 const productionSO = sbo + 'SBO:0000589';
 const inhibitionSO = sbo + 'SBO:0000169';
 const inhibitorSO = sbo + 'SBO:0000020';
 const inhibitedSO = sbo + 'SBO:0000642';
 const templateSO = sbo + 'SBO:0000645';
 const productSO = sbo + 'SBO:0000011';
-
 const ymax = 'http://mathworld.wolfram.com/Maximum.html';
 const ymin = 'http://mathworld.wolfram.com/Minimum.html';
 const n = 'http://mathworld.wolfram.com/Slope.html';
 const kd = 'https://en.wikipedia.org/wiki/Dissociation_constant';
 const eqn = 'https://en.wikipedia.org/wiki/Equation';
-
 const gate_parts_so = 'http://identifiers.org/so/SO:0000804';
+var activityURI = 'https://synbiohub.programmingbiology.org/public/Cello_Parts/cello2sbol/1';
 
+//Create a new SBOL Document
 var sbol = new SBOLDocument();
-//const createdBy = sbol.genericTopLevel();
 
+/* Only Required while creating this the first time.
+//Create an Activity - A conversion script
 var actVersion = 1;
 var actDisplayId = 'cello2sbol';
-var actPersistantIdentity = urlsuffix + actDisplayId;
-var actURI = actPersistantIdentity + '/' + actVersion;
+var actPersistantIdentity = urlprefix + actDisplayId;
 
-const activity = sbol.genericTopLevel(actURI,provNS + 'Activity');
 
+const activity = sbol.genericTopLevel(activityURI,provNS + 'Activity');
 activity.version = actVersion;
 activity.displayId = actDisplayId;
 activity.name = 'Cello UCF to SBOL conversion';
@@ -46,19 +54,21 @@ activity.addStringAnnotation(dcNS + 'creator','Prashant Vaidyanathan');
 activity.addStringAnnotation(dcNS + 'creator','Chris J. Myers');
 activity.addStringAnnotation('http://purl.org/dc/terms/created', today.toISOString() + '');
 activity.persistentIdentity = actPersistantIdentity;
-activity.uri = actURI;
+activity.uri = activityURI;
+*/
 
 
+//Load the Cello UCF File
+var ucf = JSON.parse(fs.readFileSync(ucfFilepath) + '');
 
-//Cello UCF File
-var ucf = JSON.parse(fs.readFileSync('Eco1C1G1T0.UCF.json') + '');
-
-//Arrays to store each JSON collection object in the UCF
+//Arrays and Maps to store each JSON collection object in the UCF
 var gate_partsArr = [];
 var response_funcMap = {};
-
 var partsMap = {};
+var partsSBOL = {}
+var moduleDefnMap = {}
 
+//Go through the UCF file to store collections in local data structures (arrays and maps)
 ucf.forEach(function (collection) {
     switch (collection.collection) {
         case 'parts':
@@ -75,16 +85,14 @@ ucf.forEach(function (collection) {
 
 }, this);
 
-var partsSBOL = {}
-var moduleDefnMap = {}
 
+//Function calls to create the SBOL Document
 convertPartsToSBOL();
 convertGatePartsToSBOL();
 
 
-//console.log(sbol.serializeXML());
-
-fs.writeFile("cello.xml", sbol.serializeXML(), function (err) {
+//Write the SBOL document to an XML file.
+fs.writeFile(resultFilepath, sbol.serializeXML(), function (err) {
     if (err) {
         return console.log(err);
     }
@@ -93,6 +101,7 @@ fs.writeFile("cello.xml", sbol.serializeXML(), function (err) {
 });
 
 
+//Function to convert Cello Parts to SBOL
 function convertPartsToSBOL() {
 
     Object.keys(partsMap).forEach(function (partkey) {
@@ -104,47 +113,47 @@ function convertPartsToSBOL() {
             componentDefinition.version = version;
             componentDefinition.displayId = part.name;
             componentDefinition.name = part.name;
-            componentDefinition.persistentIdentity = urlsuffix + componentDefinition.displayId;
+            componentDefinition.persistentIdentity = urlprefix + componentDefinition.displayId;
             componentDefinition.uri = componentDefinition.persistentIdentity + '/' + componentDefinition.version;
             componentDefinition.wasDerivedFrom = derivedFrom;
-            componentDefinition.addUriAnnotation(provNS + 'wasGeneratedBy', actURI);
-            //add Type
-
-
+            componentDefinition.addUriAnnotation(provNS + 'wasGeneratedBy', activityURI);
+            
             const sequence = sbol.sequence()
             sequence.displayId = part.name + '_sequence';
             sequence.name = part.name + '_sequence';
             sequence.version = version;
             sequence.elements = part.dnasequence;
-            sequence.persistentIdentity = urlsuffix + sequence.displayId;
+            sequence.persistentIdentity = urlprefix + sequence.displayId;
             sequence.uri = sequence.persistentIdentity + '/' + sequence.version;
             sequence.wasDerivedFrom = derivedFrom;
             sequence.encoding = SBOLDocument.terms.dnaSequence;
-            sequence.addUriAnnotation(provNS + 'wasGeneratedBy', actURI);
+            sequence.addUriAnnotation(provNS + 'wasGeneratedBy', activityURI);
             componentDefinition.addSequence(sequence)
-
+            
             componentDefinition.addRole(getPartType(part.type));
             componentDefinition.addType(SBOLDocument.terms.dnaRegion);
 
+            // Create a Protein 
             if(part.type === 'cds'){
                 const proteinComponentDefinition = sbol.componentDefinition();
                 proteinComponentDefinition.version = version;
                 proteinComponentDefinition.displayId = componentDefinition.displayId + '_protein';
                 proteinComponentDefinition.name = componentDefinition.displayId + '_protein';
-                proteinComponentDefinition.persistentIdentity = urlsuffix + proteinComponentDefinition.displayId;
+                proteinComponentDefinition.persistentIdentity = urlprefix + proteinComponentDefinition.displayId;
                 proteinComponentDefinition.uri = proteinComponentDefinition.persistentIdentity + '/' + proteinComponentDefinition.version;
                 proteinComponentDefinition.addType(SBOLDocument.terms.protein);
-                proteinComponentDefinition.addUriAnnotation(provNS + 'wasGeneratedBy', actURI);
+                proteinComponentDefinition.addUriAnnotation(provNS + 'wasGeneratedBy', activityURI);
                 partsSBOL[partName + '_protein'] = proteinComponentDefinition.uri;
 
                 const moduleDefinition = sbol.moduleDefinition();
                 moduleDefinition.name = proteinComponentDefinition.displayId + '_production';
                 moduleDefinition.version = version;
                 moduleDefinition.displayId = proteinComponentDefinition.displayId + '_production';
-                moduleDefinition.persistentIdentity = urlsuffix + moduleDefinition.displayId;
+                moduleDefinition.persistentIdentity = urlprefix + moduleDefinition.displayId;
                 moduleDefinition.uri = moduleDefinition.persistentIdentity + '/' + moduleDefinition.version;
-                moduleDefinition.addUriAnnotation(provNS + 'wasGeneratedBy', actURI);
+                moduleDefinition.addUriAnnotation(provNS + 'wasGeneratedBy', activityURI);
 
+                //Functional Component for Coding sequence
                 const functionalComponentCDS = sbol.functionalComponent();
                 functionalComponentCDS.version = version;
                 functionalComponentCDS.displayId = componentDefinition.displayId + '_functionalComponent';
@@ -153,6 +162,7 @@ function convertPartsToSBOL() {
                 functionalComponentCDS.uri = functionalComponentCDS.persistentIdentity + '/' + functionalComponentCDS.version;
                 functionalComponentCDS.definition = componentDefinition;
 
+                //Functional Component for Protein
                 const functionalComponentProt = sbol.functionalComponent();
                 functionalComponentProt.version = version;
                 functionalComponentProt.displayId = proteinComponentDefinition.displayId + '_functionalComponent';
@@ -161,6 +171,7 @@ function convertPartsToSBOL() {
                 functionalComponentProt.uri = functionalComponentProt.persistentIdentity + '/' + functionalComponentProt.version;
                 functionalComponentProt.definition = proteinComponentDefinition;
 
+                //CDS to Protein interaction
                 const interaction = sbol.interaction();
                 interaction.displayId = proteinComponentDefinition.displayId + '_interaction';
                 interaction.name = interaction.displayId;
@@ -169,7 +180,7 @@ function convertPartsToSBOL() {
                 interaction.uri = interaction.persistentIdentity + '/' + interaction.version;
                 interaction.addType(productionSO);
                 
-
+                //CDS Participation
                 const participationCDS = sbol.participation();
                 participationCDS.version = version;
                 participationCDS.name = componentDefinition.displayId + '_participation';
@@ -179,6 +190,7 @@ function convertPartsToSBOL() {
                 participationCDS.addRole(templateSO);
                 participationCDS.participant = functionalComponentCDS;
 
+                //Protein Participation
                 const participationProt = sbol.participation();
                 participationProt.version = version;
                 participationProt.name = proteinComponentDefinition.displayId + '_participation';
@@ -206,6 +218,7 @@ function convertPartsToSBOL() {
 
 };
 
+//Function to convert Cello Gate Parts to SBOL
 function convertGatePartsToSBOL() {
 
     gate_partsArr.forEach(function (gpart) {
@@ -214,13 +227,12 @@ function convertGatePartsToSBOL() {
         componentDefinition.version = version;
         componentDefinition.displayId = gpartName;
         componentDefinition.name = gpartName;
-        componentDefinition.persistentIdentity = urlsuffix + componentDefinition.displayId;
+        componentDefinition.persistentIdentity = urlprefix + componentDefinition.displayId;
         componentDefinition.uri = componentDefinition.persistentIdentity + '/' + componentDefinition.version;
         componentDefinition.wasDerivedFrom = derivedFrom;
-        componentDefinition.addUriAnnotation(provNS + 'wasGeneratedBy', actURI);
-        //Parts in Cassette
-
-        //console.log('Cassettes in ' + gpartName);
+        componentDefinition.addUriAnnotation(provNS + 'wasGeneratedBy', activityURI);
+        
+        //Cassette parts in Gate
         gpart.expression_cassettes.forEach(function (expression_cassettesArr) {
             var seq = "";
             var annotationCount = 0;
@@ -263,18 +275,19 @@ function convertGatePartsToSBOL() {
                 sa.addLocation(range);
                 componentDefinition.addSequenceAnnotation(sa);
 
+                //Create Protein -> Promoter repression Module definition
                 if(partsMap[cassette].type === 'cds'){
                     if(!(cassette in moduleDefnMap)){
-                        //console.log('Creating Module definition for ' + cassette + ' and ' + gpart.promoter);
-
+                        
                         const moduleDefinition = sbol.moduleDefinition();
                         moduleDefinition.version = version;
                         moduleDefinition.name = cassette + '_' + gpart.promoter + '_repression';
                         moduleDefinition.displayId = cassette + '_' + gpart.promoter + '_repression';
-                        moduleDefinition.persistentIdentity = urlsuffix + moduleDefinition.displayId;
+                        moduleDefinition.persistentIdentity = urlprefix + moduleDefinition.displayId;
                         moduleDefinition.uri = moduleDefinition.persistentIdentity + '/' + moduleDefinition.version;
-                        moduleDefinition.addUriAnnotation(provNS + 'wasGeneratedBy', actURI);
+                        moduleDefinition.addUriAnnotation(provNS + 'wasGeneratedBy', activityURI);
                         
+                        //Functional Component for Protein
                         const functionalComponentCDS = sbol.functionalComponent();
                         functionalComponentCDS.version = version;
                         functionalComponentCDS.name = cassette + '_protein_functionalComponent';
@@ -283,6 +296,7 @@ function convertGatePartsToSBOL() {
                         functionalComponentCDS.uri = functionalComponentCDS.persistentIdentity + '/' + functionalComponentCDS.version;
                         functionalComponentCDS.definition = sbol.lookupURI(partsSBOL[cassette + '_protein']);
 
+                        //Functional Component for Promoter
                         const functionalComponentProm = sbol.functionalComponent();
                         functionalComponentProm.version = version;
                         functionalComponentProm.name = gpart.promoter + '_functionalComponent';
@@ -291,6 +305,7 @@ function convertGatePartsToSBOL() {
                         functionalComponentProm.uri = functionalComponentProm.persistentIdentity + '/' + functionalComponentProm.version;
                         functionalComponentProm.definition = sbol.lookupURI(partsSBOL[gpart.promoter]);
 
+                        //Protein -> Promoter Interaction
                         const interaction = sbol.interaction();
                         interaction.version = version;
                         interaction.name = cassette + '_' + gpart.promoter + '_interaction';
@@ -299,6 +314,7 @@ function convertGatePartsToSBOL() {
                         interaction.uri = interaction.persistentIdentity + '/' + interaction.version;
                         interaction.addType(inhibitionSO);
 
+                        //Protein participation
                         const participantProt = sbol.participation();
                         participantProt.version = version;
                         participantProt.name = cassette + '_protein_participation';
@@ -308,6 +324,7 @@ function convertGatePartsToSBOL() {
                         participantProt.addRole(inhibitorSO);
                         participantProt.participant = functionalComponentCDS;
 
+                        //Promoter participation
                         const participantProm = sbol.participation();
                         participantProm.version = version;
                         participantProm.name = gpart.promoter + '_participation';
@@ -337,11 +354,11 @@ function convertGatePartsToSBOL() {
             sequence.name = gpartName + '_sequence';
             sequence.version = version;
             sequence.elements = seq;
-            sequence.persistentIdentity = urlsuffix + sequence.displayId;
+            sequence.persistentIdentity = urlprefix + sequence.displayId;
             sequence.uri = sequence.persistentIdentity + '/' + sequence.version;
             sequence.wasDerivedFrom = derivedFrom;
             sequence.encoding = SBOLDocument.terms.dnaSequence;
-            sequence.addUriAnnotation(provNS + 'wasGeneratedBy', actURI);
+            sequence.addUriAnnotation(provNS + 'wasGeneratedBy', activityURI);
             componentDefinition.addSequence(sequence);
 
         }, this);
@@ -370,6 +387,7 @@ function convertGatePartsToSBOL() {
     }, this);
 };
 
+//Map from Cello Part Type to SO term
 function getPartType(part) {
     if (part === 'ribozyme') {
         return so + 'SO:0000374';
