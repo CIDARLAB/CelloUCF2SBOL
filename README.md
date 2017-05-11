@@ -2,7 +2,7 @@
 An API to convert the Cello UCF to SBOL
 
 
-Install and Run Cello
+Install and Run 
 ----------------------------
 Instructions to install Cello can be found in [INSTALL.md](INSTALL.md). Instructions to run this script can be found in [RUN.md](RUN.md).
 
