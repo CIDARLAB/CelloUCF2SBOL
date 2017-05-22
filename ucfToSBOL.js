@@ -35,7 +35,7 @@ const regulatorSO = sbo + 'SBO:0000369';
 //const tetrFamilySO = so + 'SO:0000187'; //SO for repeat sequences.
 
 
-var celloSO = 'https://github.com/CIDARLAB/cello/wiki/Cello-SBOL-Description#';
+var celloSO = 'http://wiki.synbiohub.org/wiki/Terms/cello#';
 const ymax = celloSO + 'ymax';
 const ymin = celloSO + 'ymin';
 const n = celloSO + 'n';
