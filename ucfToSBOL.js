@@ -5,7 +5,11 @@ var SBOLDocument = require('sboljs');
 
 //IO Locations
 var ucfFilepath = 'ucf/Eco1C1G1T0.UCF.json';
-var resultFilepath = 'result/cello.xml';
+var resultFolder = 'result/';
+var cytometryFolder = resultFolder + 'cytometry/';
+var toxicityFolder = resultFolder + 'toxicity/';
+var resultSBOL = resultFolder + 'cello.xml';
+
 
 //Constant Terms
 const version = '1-Eco1C1G1T0';
@@ -27,35 +31,43 @@ const inhibitorSO = sbo + 'SBO:0000020';
 const inhibitedSO = sbo + 'SBO:0000642';
 const templateSO = sbo + 'SBO:0000645';
 const productSO = sbo + 'SBO:0000011';
-const ymax = 'http://mathworld.wolfram.com/Maximum.html';
-const ymin = 'http://mathworld.wolfram.com/Minimum.html';
-const n = 'http://mathworld.wolfram.com/Slope.html';
-const kd = 'https://en.wikipedia.org/wiki/Dissociation_constant';
-const eqn = 'https://en.wikipedia.org/wiki/Equation';
+const regulatorSO = sbo + 'SBO:0000369';
+const tetrFamilySO = so + 'SO:0000187'; //SO for repeat sequences.
+
+
+var celloSO = 'https://github.com/CIDARLAB/cello/wiki/Cello-SBOL-Description#';
+const ymax = celloSO + 'ymax';
+const ymin = celloSO + 'ymin';
+const n = celloSO + 'n';
+const kd = celloSO + 'K';
+const eqn = celloSO + 'response-function';
+const gate_type = celloSO + 'gate_type';
+const color_hexcode = celloSO + 'gate-color-hexcode';
+const group_name = celloSO + 'group-name';
 const gate_parts_so = 'http://identifiers.org/so/SO:0000804';
-var activityURI = 'https://synbiohub.programmingbiology.org/public/Cello_Parts/cello2sbol/1';
+//var activityURI = 'https://synbiohub.programmingbiology.org/public/Cello_Parts/cello2sbol/1';
 
 //Create a new SBOL Document
 var sbol = new SBOLDocument();
 
-/* Only Required while creating this the first time.
+//Only Required while creating this the first time.
 //Create an Activity - A conversion script
 var actVersion = 1;
 var actDisplayId = 'cello2sbol';
 var actPersistantIdentity = urlprefix + actDisplayId;
+var activityURI = actPersistantIdentity + '/' + actVersion;
 
-
-const activity = sbol.genericTopLevel(activityURI,provNS + 'Activity');
+const activity = sbol.genericTopLevel(activityURI, provNS + 'Activity');
 activity.version = actVersion;
 activity.displayId = actDisplayId;
 activity.name = 'Cello UCF to SBOL conversion';
 activity.description = 'Conversion of the Cello UCF parts and metadata to SBOL2.1';
-activity.addStringAnnotation(dcNS + 'creator','Prashant Vaidyanathan');
-activity.addStringAnnotation(dcNS + 'creator','Chris J. Myers');
+activity.addStringAnnotation(dcNS + 'creator', 'Prashant Vaidyanathan');
+activity.addStringAnnotation(dcNS + 'creator', 'Chris J. Myers');
 activity.addStringAnnotation('http://purl.org/dc/terms/created', today.toISOString() + '');
 activity.persistentIdentity = actPersistantIdentity;
 activity.uri = activityURI;
-*/
+
 
 
 //Load the Cello UCF File
@@ -67,9 +79,20 @@ var response_funcMap = {};
 var partsMap = {};
 var partsSBOL = {}
 var moduleDefnMap = {}
+var cytometryMap = {};
+var toxicityMap = {};
+var gatesMap = {};
+
+var motif_library = [];
+var logicConstraints;
+var eugeneRules;
+var geneticLocations;
+var measurementstd;
+var header;
 
 //Go through the UCF file to store collections in local data structures (arrays and maps)
 ucf.forEach(function (collection) {
+
     switch (collection.collection) {
         case 'parts':
             //partsArr.push(collection);
@@ -81,18 +104,47 @@ ucf.forEach(function (collection) {
         case 'response_functions':
             response_funcMap[collection.gate_name] = collection;
             break;
+        case 'gates':
+            gatesMap[collection.gate_name] = collection;
+            break;
+        case 'gate_cytometry':
+            cytometryMap[collection.gate_name] = collection.cytometry_data;
+            break;
+        case 'gate_toxicity':
+            toxicityMap[collection.gate_name] = collection;
+            break;
+        case 'motif_library':
+            motif_library.push(collection);
+            break;
+        case 'logic_constraints':
+            logicConstraints = collection;
+            break;
+        case 'eugene_rules':
+            eugeneRules = collection;
+            break;
+        case 'genetic_locations':
+            geneticLocations = collection;
+            break;
+        case 'measurement_std':
+            measurementstd = collection;
+            break;
+        case 'header':
+            header = collection;
+            break;
     }
 
 }, this);
 
-
 //Function calls to create the SBOL Document
 convertPartsToSBOL();
 convertGatePartsToSBOL();
-
+//Function calls to create attachments
+convertCytometryToAttachments();
+covertToxicityToAttachments();
+createCircuitConstraintsFile();
 
 //Write the SBOL document to an XML file.
-fs.writeFile(resultFilepath, sbol.serializeXML(), function (err) {
+fs.writeFile(resultSBOL, sbol.serializeXML(), function (err) {
     if (err) {
         return console.log(err);
     }
@@ -117,7 +169,7 @@ function convertPartsToSBOL() {
             componentDefinition.uri = componentDefinition.persistentIdentity + '/' + componentDefinition.version;
             componentDefinition.wasDerivedFrom = derivedFrom;
             componentDefinition.addUriAnnotation(provNS + 'wasGeneratedBy', activityURI);
-            
+
             const sequence = sbol.sequence()
             sequence.displayId = part.name + '_sequence';
             sequence.name = part.name + '_sequence';
@@ -129,12 +181,12 @@ function convertPartsToSBOL() {
             sequence.encoding = SBOLDocument.terms.dnaSequence;
             sequence.addUriAnnotation(provNS + 'wasGeneratedBy', activityURI);
             componentDefinition.addSequence(sequence)
-            
+
             componentDefinition.addRole(getPartType(part.type));
             componentDefinition.addType(SBOLDocument.terms.dnaRegion);
 
             // Create a Protein 
-            if(part.type === 'cds'){
+            if (part.type === 'cds') {
                 const proteinComponentDefinition = sbol.componentDefinition();
                 proteinComponentDefinition.version = version;
                 proteinComponentDefinition.displayId = componentDefinition.displayId + '_protein';
@@ -179,7 +231,7 @@ function convertPartsToSBOL() {
                 interaction.persistentIdentity = moduleDefinition.persistentIdentity + '/' + interaction.displayId;
                 interaction.uri = interaction.persistentIdentity + '/' + interaction.version;
                 interaction.addType(productionSO);
-                
+
                 //CDS Participation
                 const participationCDS = sbol.participation();
                 participationCDS.version = version;
@@ -231,7 +283,14 @@ function convertGatePartsToSBOL() {
         componentDefinition.uri = componentDefinition.persistentIdentity + '/' + componentDefinition.version;
         componentDefinition.wasDerivedFrom = derivedFrom;
         componentDefinition.addUriAnnotation(provNS + 'wasGeneratedBy', activityURI);
-        
+
+        //add information from Gates Collection
+        componentDefinition.addUriAnnotation(tetrFamilySO, gatesMap[gpartName].system);
+        componentDefinition.addUriAnnotation(regulatorSO, gatesMap[gpartName].regulator);
+        componentDefinition.addUriAnnotation(group_name, gatesMap[gpartName].regulator);
+        componentDefinition.addUriAnnotation(gate_type, gatesMap[gpartName].gate_type );
+        componentDefinition.addUriAnnotation(color_hexcode, gatesMap[gpartName].color_hexcode);
+
         //Cassette parts in Gate
         gpart.expression_cassettes.forEach(function (expression_cassettesArr) {
             var seq = "";
@@ -239,7 +298,7 @@ function convertGatePartsToSBOL() {
             var start = 1;
 
             expression_cassettesArr.cassette_parts.forEach(function (cassette) {
-                
+
                 const component = sbol.component();
                 component.version = version;
                 component.displayId = cassette;
@@ -248,7 +307,7 @@ function convertGatePartsToSBOL() {
                 component.uri = component.persistentIdentity + '/' + component.version;
                 component.definition = sbol.lookupURI(partsSBOL[cassette]);
                 componentDefinition.addComponent(component);
-                
+
                 var cass_seq = partsMap[cassette].dnasequence;
                 seq += cass_seq;
 
@@ -276,9 +335,9 @@ function convertGatePartsToSBOL() {
                 componentDefinition.addSequenceAnnotation(sa);
 
                 //Create Protein -> Promoter repression Module definition
-                if(partsMap[cassette].type === 'cds'){
-                    if(!(cassette in moduleDefnMap)){
-                        
+                if (partsMap[cassette].type === 'cds') {
+                    if (!(cassette in moduleDefnMap)) {
+
                         const moduleDefinition = sbol.moduleDefinition();
                         moduleDefinition.version = version;
                         moduleDefinition.name = cassette + '_' + gpart.promoter + '_repression';
@@ -286,7 +345,7 @@ function convertGatePartsToSBOL() {
                         moduleDefinition.persistentIdentity = urlprefix + moduleDefinition.displayId;
                         moduleDefinition.uri = moduleDefinition.persistentIdentity + '/' + moduleDefinition.version;
                         moduleDefinition.addUriAnnotation(provNS + 'wasGeneratedBy', activityURI);
-                        
+
                         //Functional Component for Protein
                         const functionalComponentCDS = sbol.functionalComponent();
                         functionalComponentCDS.version = version;
@@ -310,7 +369,7 @@ function convertGatePartsToSBOL() {
                         interaction.version = version;
                         interaction.name = cassette + '_' + gpart.promoter + '_interaction';
                         interaction.displayId = cassette + '_' + gpart.promoter + '_interaction';
-                        interaction.persistentIdentity =  moduleDefinition.persistentIdentity + '/' + interaction.displayId;
+                        interaction.persistentIdentity = moduleDefinition.persistentIdentity + '/' + interaction.displayId;
                         interaction.uri = interaction.persistentIdentity + '/' + interaction.version;
                         interaction.addType(inhibitionSO);
 
@@ -333,7 +392,7 @@ function convertGatePartsToSBOL() {
                         participantProm.uri = participantProm.persistentIdentity + '/' + participantProm.version;
                         participantProm.addRole(inhibitedSO);
                         participantProm.participant = functionalComponentProm;
-                        
+
                         interaction.addParticipation(participantProt);
                         interaction.addParticipation(participantProm);
 
@@ -362,7 +421,7 @@ function convertGatePartsToSBOL() {
             componentDefinition.addSequence(sequence);
 
         }, this);
-        /*
+
         response_funcMap[gpartName].parameters.forEach(function (param) {
             switch (param.name) {
                 case 'ymax':
@@ -378,14 +437,59 @@ function convertGatePartsToSBOL() {
                     componentDefinition.addStringAnnotation(n, param.value);
                     break;
             }
-        }, this);*/
-        //componentDefinition.addStringAnnotation(eqn, response_funcMap[gpartName].equation);
-    
+        }, this);
+        componentDefinition.addStringAnnotation(eqn, response_funcMap[gpartName].equation);
+
         componentDefinition.addType(SBOLDocument.terms.dnaRegion);
         componentDefinition.addRole(gate_parts_so);
         componentDefinition.addStringAnnotation('http://purl.org/dc/terms/created', datecreated.toISOString() + '');
     }, this);
 };
+
+function convertCytometryToAttachments() {
+    Object.keys(cytometryMap).forEach(function (cytometry) {
+        var cytometry_filepath = cytometryFolder + cytometry + '_cytometry.json';
+        fs.writeFile(cytometry_filepath, JSON.stringify(cytometryMap[cytometry], null, 2), function (err) {
+            if (err) {
+                return console.log(err);
+            }
+
+            console.log("Cytometry file for " + cytometry + " created!");
+        });
+    }, this);
+}
+
+function covertToxicityToAttachments() {
+    Object.keys(toxicityMap).forEach(function (toxicity) {
+        var toxicity_filepath = toxicityFolder + toxicity + '_toxicity.json';
+        var toxMap = {};
+        toxMap['input'] = toxicityMap[toxicity].input;
+        toxMap['growth'] = toxicityMap[toxicity].growth;
+        fs.writeFile(toxicity_filepath, JSON.stringify(toxMap, null, 2), function (err) {
+            if (err) {
+                return console.log(err);
+            }
+            console.log("Toxicity file for " + toxicity + " created!");
+        });
+    }, this);
+}
+
+function createCircuitConstraintsFile() {
+    var constraints = {};
+    constraints['logic_constraints'] = logicConstraints;
+    constraints['motif_library'] = motif_library;
+    constraints['eugene_rules'] = eugeneRules;
+    constraints['genetic_locations'] = geneticLocations;
+    constraints['measurement_std'] = measurementstd;
+    constraints['header'] = header;
+    var circuitConstraintsFilepath = resultFolder + 'circuitConstraints.json'
+    fs.writeFile(circuitConstraintsFilepath, JSON.stringify(constraints, null, 2), function (err) {
+        if (err) {
+            return console.log(err);
+        }
+        console.log("Circuit constraints file created!");
+    });
+}
 
 //Map from Cello Part Type to SO term
 function getPartType(part) {
