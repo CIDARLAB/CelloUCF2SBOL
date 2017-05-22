@@ -4,7 +4,7 @@ An API to convert the Cello UCF to SBOL
 
 Running this Script 
 ----------------------------
-Instructions to run this script can be found in [RUN.md](RUN.md).
+Instructions to run to install this script can be found in [INSTALL.md](INSTALL.md) and the instructions to run this script and upload the SBOL file to Synbiohub can be found in [RUN.md](RUN.md).
 
 Contributing to this project
 ----------------------------
