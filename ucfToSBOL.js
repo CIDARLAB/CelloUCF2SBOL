@@ -32,7 +32,7 @@ const inhibitedSO = sbo + 'SBO:0000642';
 const templateSO = sbo + 'SBO:0000645';
 const productSO = sbo + 'SBO:0000011';
 const regulatorSO = sbo + 'SBO:0000369';
-const tetrFamilySO = so + 'SO:0000187'; //SO for repeat sequences.
+//const tetrFamilySO = so + 'SO:0000187'; //SO for repeat sequences.
 
 
 var celloSO = 'https://github.com/CIDARLAB/cello/wiki/Cello-SBOL-Description#';
@@ -44,6 +44,7 @@ const eqn = celloSO + 'response-function';
 const gate_type = celloSO + 'gate_type';
 const color_hexcode = celloSO + 'gate-color-hexcode';
 const group_name = celloSO + 'group-name';
+const tetR_family = celloSO + 'family'
 const gate_parts_so = 'http://identifiers.org/so/SO:0000804';
 //var activityURI = 'https://synbiohub.programmingbiology.org/public/Cello_Parts/cello2sbol/1';
 
@@ -285,9 +286,9 @@ function convertGatePartsToSBOL() {
         componentDefinition.addUriAnnotation(provNS + 'wasGeneratedBy', activityURI);
 
         //add information from Gates Collection
-        componentDefinition.addUriAnnotation(tetrFamilySO, gatesMap[gpartName].system);
-        componentDefinition.addUriAnnotation(regulatorSO, gatesMap[gpartName].regulator);
-        componentDefinition.addUriAnnotation(group_name, gatesMap[gpartName].regulator);
+        componentDefinition.addUriAnnotation(tetR_family, gatesMap[gpartName].system);
+        //componentDefinition.addUriAnnotation(regulatorSO, gatesMap[gpartName].regulator);
+        componentDefinition.addUriAnnotation(group_name, gatesMap[gpartName].group_name);
         componentDefinition.addUriAnnotation(gate_type, gatesMap[gpartName].gate_type );
         componentDefinition.addUriAnnotation(color_hexcode, gatesMap[gpartName].color_hexcode);
 
