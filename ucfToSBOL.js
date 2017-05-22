@@ -286,11 +286,11 @@ function convertGatePartsToSBOL() {
         componentDefinition.addUriAnnotation(provNS + 'wasGeneratedBy', activityURI);
 
         //add information from Gates Collection
-        componentDefinition.addUriAnnotation(tetR_family, gatesMap[gpartName].system);
+        componentDefinition.addStringAnnotation(tetR_family, gatesMap[gpartName].system);
         //componentDefinition.addUriAnnotation(regulatorSO, gatesMap[gpartName].regulator);
-        componentDefinition.addUriAnnotation(group_name, gatesMap[gpartName].group_name);
-        componentDefinition.addUriAnnotation(gate_type, gatesMap[gpartName].gate_type );
-        componentDefinition.addUriAnnotation(color_hexcode, gatesMap[gpartName].color_hexcode);
+        componentDefinition.addStringAnnotation(group_name, gatesMap[gpartName].group_name);
+        componentDefinition.addStringAnnotation(gate_type, gatesMap[gpartName].gate_type );
+        componentDefinition.addStringAnnotation(color_hexcode, gatesMap[gpartName].color_hexcode);
 
         //Cassette parts in Gate
         gpart.expression_cassettes.forEach(function (expression_cassettesArr) {
