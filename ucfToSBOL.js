@@ -140,9 +140,9 @@ ucf.forEach(function (collection) {
 convertPartsToSBOL();
 convertGatePartsToSBOL();
 //Function calls to create attachments
-convertCytometryToAttachments();
-covertToxicityToAttachments();
-createCircuitConstraintsFile();
+//convertCytometryToAttachments();
+//covertToxicityToAttachments();
+//createCircuitConstraintsFile();
 
 //Write the SBOL document to an XML file.
 fs.writeFile(resultSBOL, sbol.serializeXML(), function (err) {
@@ -276,21 +276,21 @@ function convertGatePartsToSBOL() {
 
     gate_partsArr.forEach(function (gpart) {
         var gpartName = gpart.gate_name;
-        const componentDefinition = sbol.componentDefinition();
-        componentDefinition.version = version;
-        componentDefinition.displayId = gpartName;
-        componentDefinition.name = gpartName;
-        componentDefinition.persistentIdentity = urlprefix + componentDefinition.displayId;
-        componentDefinition.uri = componentDefinition.persistentIdentity + '/' + componentDefinition.version;
-        componentDefinition.wasDerivedFrom = derivedFrom;
-        componentDefinition.addUriAnnotation(provNS + 'wasGeneratedBy', activityURI);
+        // const componentDefinition = sbol.componentDefinition();
+        // componentDefinition.version = version;
+        // componentDefinition.displayId = gpartName;
+        // componentDefinition.name = gpartName;
+        // componentDefinition.persistentIdentity = urlprefix + componentDefinition.displayId;
+        // componentDefinition.uri = componentDefinition.persistentIdentity + '/' + componentDefinition.version;
+        // componentDefinition.wasDerivedFrom = derivedFrom;
+        // componentDefinition.addUriAnnotation(provNS + 'wasGeneratedBy', activityURI);
 
         //add information from Gates Collection
-        componentDefinition.addStringAnnotation(tetR_family, gatesMap[gpartName].system);
-        //componentDefinition.addUriAnnotation(regulatorSO, gatesMap[gpartName].regulator);
-        componentDefinition.addStringAnnotation(group_name, gatesMap[gpartName].group_name);
-        componentDefinition.addStringAnnotation(gate_type, gatesMap[gpartName].gate_type );
-        componentDefinition.addStringAnnotation(color_hexcode, gatesMap[gpartName].color_hexcode);
+        // componentDefinition.addStringAnnotation(tetR_family, gatesMap[gpartName].system);
+        // //componentDefinition.addUriAnnotation(regulatorSO, gatesMap[gpartName].regulator);
+        // componentDefinition.addStringAnnotation(group_name, gatesMap[gpartName].group_name);
+        // componentDefinition.addStringAnnotation(gate_type, gatesMap[gpartName].gate_type );
+        // componentDefinition.addStringAnnotation(color_hexcode, gatesMap[gpartName].color_hexcode);
 
         //Cassette parts in Gate
         gpart.expression_cassettes.forEach(function (expression_cassettesArr) {
@@ -300,40 +300,40 @@ function convertGatePartsToSBOL() {
 
             expression_cassettesArr.cassette_parts.forEach(function (cassette) {
 
-                const component = sbol.component();
-                component.version = version;
-                component.displayId = cassette;
-                component.name = cassette;
-                component.persistentIdentity = componentDefinition.persistentIdentity + '/' + component.displayId;
-                component.uri = component.persistentIdentity + '/' + component.version;
-                component.definition = sbol.lookupURI(partsSBOL[cassette]);
-                componentDefinition.addComponent(component);
+                // const component = sbol.component();
+                // component.version = version;
+                // component.displayId = cassette;
+                // component.name = cassette;
+                // component.persistentIdentity = componentDefinition.persistentIdentity + '/' + component.displayId;
+                // component.uri = component.persistentIdentity + '/' + component.version;
+                // component.definition = sbol.lookupURI(partsSBOL[cassette]);
+                // componentDefinition.addComponent(component);
 
-                var cass_seq = partsMap[cassette].dnasequence;
-                seq += cass_seq;
+                // var cass_seq = partsMap[cassette].dnasequence;
+                // seq += cass_seq;
 
-                const sa = sbol.sequenceAnnotation();
-                sa.displayId = 'annotation' + annotationCount;
-                annotationCount++;
-                sa.name = cassette;
-                sa.version = version;
-                sa.persistentIdentity = componentDefinition.persistentIdentity + '/' + sa.displayId;
-                sa.uri = sa.persistentIdentity + '/' + sa.version;
-                sa.component = component;
-                sa.description = partsMap[cassette].type;
+                // const sa = sbol.sequenceAnnotation();
+                // sa.displayId = 'annotation' + annotationCount;
+                // annotationCount++;
+                // sa.name = cassette;
+                // sa.version = version;
+                // sa.persistentIdentity = componentDefinition.persistentIdentity + '/' + sa.displayId;
+                // sa.uri = sa.persistentIdentity + '/' + sa.version;
+                // sa.component = component;
+                // sa.description = partsMap[cassette].type;
 
-                const range = sbol.range();
-                range.displayId = 'range';
-                range.persistentIdentity = sa.persistentIdentity + '/' + range.displayId;
-                range.version = version;
-                range.uri = range.persistentIdentity + '/' + range.version;
-                range.start = start;
-                var end = start + cass_seq.length - 1;
-                range.end = end;
-                range.orientation = 'http://sbols.org/v2#inline';
+                // const range = sbol.range();
+                // range.displayId = 'range';
+                // range.persistentIdentity = sa.persistentIdentity + '/' + range.displayId;
+                // range.version = version;
+                // range.uri = range.persistentIdentity + '/' + range.version;
+                // range.start = start;
+                // var end = start + cass_seq.length - 1;
+                // range.end = end;
+                // range.orientation = 'http://sbols.org/v2#inline';
 
-                sa.addLocation(range);
-                componentDefinition.addSequenceAnnotation(sa);
+                // sa.addLocation(range);
+                // componentDefinition.addSequenceAnnotation(sa);
 
                 //Create Protein -> Promoter repression Module definition
                 if (partsMap[cassette].type === 'cds') {
@@ -406,44 +406,44 @@ function convertGatePartsToSBOL() {
                     }
                 }
 
-                start += cass_seq.length;
+                // start += cass_seq.length;
 
             });
-            const sequence = sbol.sequence()
-            sequence.displayId = gpartName + '_sequence';
-            sequence.name = gpartName + '_sequence';
-            sequence.version = version;
-            sequence.elements = seq;
-            sequence.persistentIdentity = urlprefix + sequence.displayId;
-            sequence.uri = sequence.persistentIdentity + '/' + sequence.version;
-            sequence.wasDerivedFrom = derivedFrom;
-            sequence.encoding = SBOLDocument.terms.dnaSequence;
-            sequence.addUriAnnotation(provNS + 'wasGeneratedBy', activityURI);
-            componentDefinition.addSequence(sequence);
+            // const sequence = sbol.sequence()
+            // sequence.displayId = gpartName + '_sequence';
+            // sequence.name = gpartName + '_sequence';
+            // sequence.version = version;
+            // sequence.elements = seq;
+            // sequence.persistentIdentity = urlprefix + sequence.displayId;
+            // sequence.uri = sequence.persistentIdentity + '/' + sequence.version;
+            // sequence.wasDerivedFrom = derivedFrom;
+            // sequence.encoding = SBOLDocument.terms.dnaSequence;
+            // sequence.addUriAnnotation(provNS + 'wasGeneratedBy', activityURI);
+            // componentDefinition.addSequence(sequence);
 
         }, this);
 
-        response_funcMap[gpartName].parameters.forEach(function (param) {
-            switch (param.name) {
-                case 'ymax':
-                    componentDefinition.addStringAnnotation(ymax, param.value);
-                    break;
-                case 'ymin':
-                    componentDefinition.addStringAnnotation(ymin, param.value);
-                    break;
-                case 'K':
-                    componentDefinition.addStringAnnotation(kd, param.value);
-                    break;
-                case 'n':
-                    componentDefinition.addStringAnnotation(n, param.value);
-                    break;
-            }
-        }, this);
-        componentDefinition.addStringAnnotation(eqn, response_funcMap[gpartName].equation);
+        // response_funcMap[gpartName].parameters.forEach(function (param) {
+        //     switch (param.name) {
+        //         case 'ymax':
+        //             componentDefinition.addStringAnnotation(ymax, param.value);
+        //             break;
+        //         case 'ymin':
+        //             componentDefinition.addStringAnnotation(ymin, param.value);
+        //             break;
+        //         case 'K':
+        //             componentDefinition.addStringAnnotation(kd, param.value);
+        //             break;
+        //         case 'n':
+        //             componentDefinition.addStringAnnotation(n, param.value);
+        //             break;
+        //     }
+        // }, this);
+        // componentDefinition.addStringAnnotation(eqn, response_funcMap[gpartName].equation);
 
-        componentDefinition.addType(SBOLDocument.terms.dnaRegion);
-        componentDefinition.addRole(gate_parts_so);
-        componentDefinition.addStringAnnotation('http://purl.org/dc/terms/created', datecreated.toISOString() + '');
+        // componentDefinition.addType(SBOLDocument.terms.dnaRegion);
+        // componentDefinition.addRole(gate_parts_so);
+        // componentDefinition.addStringAnnotation('http://purl.org/dc/terms/created', datecreated.toISOString() + '');
     }, this);
 };
 
